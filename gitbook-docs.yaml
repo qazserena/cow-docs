@@ -1,0 +1,12 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: 传奇牧场 · 玩家手册
+  structure:
+    - type: space
+      key: player-handbook
+      title: 玩家手册
+      path: guide
+      default: true
+      content:
+        directory: ./
+        language: zh
