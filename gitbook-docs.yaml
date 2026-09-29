@@ -6,6 +6,7 @@ site:
       key: handbook
       title: Player Handbook
       path: handbook
+      description: ""
       default: true
       children:
         - type: space
