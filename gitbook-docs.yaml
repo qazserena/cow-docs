@@ -1,12 +1,24 @@
 $schema: https://api.gitbook.com/gitbook-docs.yaml
 site:
-  title: 传奇牧场 · 玩家手册
+  title: Legend Ranch · Player Handbook
   structure:
-    - type: space
-      key: player-handbook
-      title: 玩家手册
-      path: guide
-      default: true
-      content:
-        directory: ./
-        language: zh
+    - type: section
+      key: handbook
+      title: Player Handbook
+      path: handbook
+      children:
+        - type: space
+          key: handbook-zh
+          title: 中文
+          path: zh
+          default: true
+          content:
+            directory: ./zh
+            language: zh
+        - type: space
+          key: handbook-en
+          title: English
+          path: en
+          content:
+            directory: ./en
+            language: en
