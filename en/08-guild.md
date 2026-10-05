@@ -22,8 +22,9 @@ Common ranks, low to high:
 
 **Trainee → Member → Elite → Vice Leader → Leader**
 
-- Leader: change tax rate (within a band), notices, icon, join rules, send benefits, sign up for guild battle, etc.  
-- Vice Leader / Elite: below Leader; exact permissions follow in-game settings  
+- Leader: change tax rate (within a band), notices, icon, join rules (entry fee, approval), set ranks, approve join requests, kick members, send benefits, sign up for guild battle, etc.  
+- Vice Leader: approve join requests and kick members of lower rank; cannot set ranks or change guild settings  
+- Elite: below Vice Leader; exact permissions follow in-game settings  
 - Member / Trainee: pay tax, claim benefits, join combat and quests  
 
 Some notices and renames have cooldowns (e.g. once every 30 days).
@@ -60,6 +61,31 @@ From the **winning side’s guild battle plunder** pool, shared by contribution 
 Details: [09 Guild Battle](./09-guild-battle.md).
 
 Claiming benefits usually costs your own Gas; rewards may go through the Reward Center / on-chain claim flow.
+
+---
+
+## Joining a guild: open vs. approval
+
+The Leader has two join switches under Guild Management → Settings:
+
+| Setting | Effect |
+|---|---|
+| Entrance fee | Joining costs IRT |
+| Join approval required | Players cannot join directly; they must apply and be approved by the Leader / Vice Leader |
+
+Approval flow:
+
+1. Select Planet → Join Guild. For an approval guild the button reads **Apply**. Only one pending application at a time; use **Cancel Application** to withdraw.  
+2. The Leader / Vice Leader sees it under Guild Management → Applications and approves or rejects.  
+3. Once approved, the button becomes **Confirm Join**; confirm with your wallet to bind on-chain. An approval expires after **24 hours** if not confirmed.  
+4. Quick Join prefers guilds without approval; if all require approval it applies to the first one.
+
+## Kicking members
+
+- The Leader can kick anyone except themselves; a Vice Leader can only kick members of lower rank (Trainee / Member / Elite).  
+- Path: Guild Management → Members → member settings → **Kick**. The operator's wallet sends one on-chain transaction.  
+- A kicked player who is online is notified and returned to planet selection and may join another guild; entrance fees are not refunded.  
+- The member list syncs from chain to the portal; the headcount may lag a few seconds.
 
 ---
 
@@ -100,5 +126,11 @@ A: Leaders don’t share in daily benefits — check with another rank account.
 
 **Q: Benefits were sent but members can’t see them?**  
 A: Check whether distribute succeeded, whether they expired, whether the member joined today, and whether their rank is in the share list.
+
+**Q: The join button says "Apply" / joining fails?**  
+A: That guild requires approval. Apply, wait for the Leader or Vice Leader to approve, then come back and press **Confirm Join** within 24 hours.
+
+**Q: I'm a Vice Leader — why can't I set ranks?**  
+A: Rank changes and guild settings remain Leader-only; Vice Leaders can approve join requests and kick lower-rank members.
 
 Next: [09 Guild Battle](./09-guild-battle.md)
