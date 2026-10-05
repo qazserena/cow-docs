@@ -15,6 +15,18 @@ The Academy (UI copy may also say Institute / Academy) mainly does four things:
 - Spend **IRT** on growth items, combat helpers, scenes, skin-related goods, etc.  
 - Exact shelves follow the live game  
 
+### "Left" count on goods
+
+The **Left N** next to an item is the server-wide shelf stock, not your personal purchase quota:
+
+| Goods | Restock |
+|---|---|
+| EXP Cards (Normal / Prime / Supreme), STR Batteries (Normal / Prime / Supreme), HP Potions (Normal / Prime / Supreme) | **50 per day**, automatically refilled at **00:00 Beijing time (UTC+8)** every day |
+| Hay, Rename Card and other goods | Fixed stock; restocked by operations once sold out |
+
+- When Left is 0 the Buy button is greyed out; daily-limited goods become available again after the next 00:00 refresh  
+- A single purchase cannot exceed the current Left count  
+
 After buying, use items from the **backpack**.
 
 ---
