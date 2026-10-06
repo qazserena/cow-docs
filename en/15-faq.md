@@ -42,6 +42,12 @@ Planet tax was auto-deducted — see [08](./08-guild.md).
 **Can’t find a match?**  
 Timeout may match bots; or you’ve used up today’s entries / lack energy.
 
+**In-match “Not enough spirit”?**  
+That is **mana for playing cards**, not CowShed vitality and not the energy-station combat energy. You start at **3**, then at the start of your turn the cap +1 and refills (max **8**). If the card costs more than you have left, it will not play. **Nothing in battle refills spirit** — play a cheaper card or end the turn and wait for the next refill. See [07 Arena](./07-arena.md).
+
+**Why did Match put me against a bot?**  
+After about **15 seconds** with no valid opponent, 1v1 / 3v3 / 5v5 fill with bots. 1v1 also restricts opponents by **star grade** (Genesis only vs Genesis). Ladders never fill with bots. Full PK flow: [07](./07-arena.md).
+
 **Why can’t I join guild battle?**  
 You must be on the leader’s roster and in the battle stage; check whether the guild signed up.
 
@@ -66,7 +72,7 @@ Need a guild battle win this week and leader distribution; no win → no reward 
 Check counts, CD, vitality, fee balance, state; rentals also need the listed cattle still available.
 
 **Opened a box with no Genesis?**  
-Genesis is extremely rare — normal RNG.
+The breeding cattle box starts at **0.01% (1 in 10,000)** for Genesis. Many opens of only Normal calves or shards is expected. Full drop tables: [16 Blind box odds](./16-blind-box.md).
 
 ---
 
@@ -88,11 +94,14 @@ Only approve official contracts; periodically review and revoke unknown approval
 **Can’t find a certain cattle?**  
 May be delisted, death-filtered, filters too strict, or a network error.
 
+**Why do some cattle have Sell and others don’t?**  
+**Normal adult cattle cannot be listed** on the NFT market (on-chain rule). Only **Normal calves** and **Genesis cattle** can be sold. Adult Normal cattle can still be **transferred**, but the Sell button is hidden. See [13 NFT Marketplace](./13-market.md).
+
 **Listing failed?**  
-No approval, unsellable state, not enough Gas balance, or network error.
+No approval, Normal adult (unsellable), **calf USDT price below 150**, staked/in-combat conflict, not enough Gas, or network error.
 
 ---
 
 ## Want a structured read?
 
-Start from the [README index](./README.md) by module; terms in [Appendix · Terminology](./appendix/terminology.md).
+Start from the [README index](./README.md) by module; blind-box odds in [16](./16-blind-box.md); terms in [Appendix · Terminology](./appendix/terminology.md).

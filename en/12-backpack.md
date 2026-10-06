@@ -38,7 +38,7 @@ In the backpack you can view, use, and sometimes craft. Using some items also ad
 |---|---|
 | Avatar frame | Decoration |
 | Battle background | Combat scene |
-| Skin blind box | Open random skins |
+| Skin blind box | Open random skins (odds: [16](./16-blind-box.md)) |
 
 ### Craft / open-box
 

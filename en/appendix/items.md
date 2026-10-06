@@ -34,7 +34,7 @@ Exact names, numbers, and sources follow the live game and current events.
 | Type | Use |
 |---|---|
 | Avatar frame | Profile display |
-| Skins / skin blind boxes | Combat look and stats |
+| Skins / skin blind boxes | Combat look and stats (skin-box odds: [16](../16-blind-box.md)) |
 | Badges / badge shards | Milk hashrate |
 
 ## Open-box & craft materials

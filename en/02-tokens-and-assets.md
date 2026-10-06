@@ -33,7 +33,8 @@ Every cattle is an on-chain NFT — the carrier for growth, milk, combat, and br
 
 | | Genesis cattle | Normal cattle |
 |---|---|---|
-| How to get | Extremely rare from boxes, events, high market prices | Boxes, breeding, market, shard crafting |
+| How to get | Extremely rare from boxes, events, high market prices | Boxes, breeding, market (**calves only** can be listed), shard crafting |
+| Market listing | Yes | **Only non-adult calves can be listed**; adults cannot be sold, transfer still works |
 | Lifespan | Eternal (does not die from lifespan) | Has lifespan; dies and is burned when depleted |
 | Stars | No star rank | 0–3 stars, can star-up |
 | Stat range | Higher (about 86–100 tier) | Lower (about 60–85 tier; star-up can boost) |
@@ -68,11 +69,13 @@ Example: a staked cow must be redeemed before other actions; during a feeding co
 
 | Type | Typical drops | Common sources |
 |---|---|---|
-| **Cattle blind box (embryo box)** | Genesis (extremely rare), Normal calf, cattle shards | Guaranteed from breeding; events |
-| **IGO Genesis box** | High-value Genesis / Normal calf / item packs | Limited portal IGO (often needs USDT) |
-| **Skin blind box** | Random skins | Shops, limited guild shop, events |
-| **UR chests (N–UR Chest)** | Items / badges / skins / IRT, etc. | Events, drops |
-| **Cattle shard box** | 1–3 shards | Limited guild shop, etc. |
+| **Cattle blind box (embryo box)** | Genesis 0.01%, Normal calf 90%, shards 9.99% | Guaranteed from breeding; events |
+| **IGO Genesis box** | Genesis / Normal / item pack / skin pack (depleting pool) | Limited portal IGO (often needs USDT) |
+| **Skin blind box** | Five skins (30% / 30% / 15% / 15% / 10%) | Shops, limited guild shop, IGO skin pack |
+| **UR chests (N–UR Chest)** | Fixed item sets, not a loot roll | Events, drops |
+| **Cattle shard box** | A few shards (no separate backpack open) | Events, etc. |
+
+Full counts and percentages: **[16 Blind box odds](./16-blind-box.md)**.
 
 **Cattle shards ×10** craft one Normal cattle (see [06 Academy](./06-academy.md)).
 

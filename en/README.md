@@ -17,7 +17,7 @@ Numbers may change with operations; this handbook focuses on **mechanics**. For 
 | Stake cows for milk mining, badge bonuses | [04 Milk Factory · Milk Mining](./04-milk-factory.md) |
 | Breeding, breeding rental, opening embryo boxes | [05 Breeding Institute](./05-breeding.md) |
 | Buy items, expand stalls, star-up, tech tree | [06 Academy](./06-academy.md) |
-| How PVE / Match / Ladder works | [07 Arena](./07-arena.md) |
+| How PVE / Match / Ladder PK works | [07 Arena](./07-arena.md) |
 | Planets, tax, benefits, guild shop | [08 Planets & Guilds](./08-guild.md) |
 | How to sign up, fight, and share guild battle rewards | [09 Guild Battle](./09-guild-battle.md) |
 | Friends, private chat, intimacy bonds | [10 Friends & Social](./10-social.md) |
@@ -26,6 +26,7 @@ Numbers may change with operations; this handbook focuses on **mechanics**. For 
 | How to buy/sell cattle / boxes / planets | [13 NFT Marketplace](./13-market.md) |
 | Portal mining, airdrops, IGO, vouchers, etc. | [14 Portal Events](./14-portal.md) |
 | “Why can’t I claim / it died / can’t fight” | [15 FAQ](./15-faq.md) |
+| What blind boxes drop and the odds | [16 Blind box odds](./16-blind-box.md) |
 | Item list, terminology | [Appendix](./appendix/) |
 
 ---

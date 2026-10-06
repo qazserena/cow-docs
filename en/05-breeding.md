@@ -53,15 +53,15 @@ After a deal, the listing is taken down.
 
 ## Opening blind boxes
 
-Cattle boxes from breeding may yield:
+Open breeding cattle boxes at the Breeding Institute. Initial odds:
 
-- Genesis cattle (extremely rare)  
-- Normal calves (main outcome)  
-- Cattle shards  
+- **Normal calf 90%**
+- **Cattle shards 9.99%** (4 or 5 per open)
+- **Genesis cattle 0.01%** (1 in 10,000)
 
-Collect enough shards (commonly 10) to craft a Normal cattle at the Academy.
+**10** shards craft a Normal cattle at the Academy.
 
-IGO, skin boxes, UR chests, and other open-box modes: see [02](./02-tokens-and-assets.md) and [14 Portal Events](./14-portal.md).
+Full tables for IGO, CattleMart, and skin boxes: **[16 Blind box odds](./16-blind-box.md)**.
 
 ---
 
@@ -81,4 +81,4 @@ The portal also has beta invite events (complete tasks for USDT) — see [14](./
 - Watch CD and breed counts — don’t lock key combat / milk cattle in cooldown  
 - Before listing for rent, check fees and market prices  
 
-Related: star-up and shard craft → [06](./06-academy.md)
+Related: star-up and shard craft → [06](./06-academy.md); drop tables → [16](./16-blind-box.md)

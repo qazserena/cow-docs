@@ -49,6 +49,7 @@ After adulthood:
 
 - **Cows** → can enter the Milk Factory  
 - **Bulls** → can enter the Arena  
+- **Normal adult cattle can no longer be listed** on the NFT market (Genesis cattle are unrestricted); sell before adulthood if you need to trade — see [13](./13-market.md)  
 
 ---
 

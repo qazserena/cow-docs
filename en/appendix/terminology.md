@@ -13,12 +13,15 @@
 | Breeding Institute | Breeding, open boxes, breeding rental |
 | Academy | Shop, expand stalls, star-up, tech tree |
 | Arena | PVE / Match / Ladders |
+| Vitality | Restored by feeding in the CowShed; used for growth, milk, and charging the energy station |
+| Combat energy | Pre-match resource charged at the energy station to enter a fight |
+| Spirit (mana) | In-match cost to play cards; starts at 3, refills on your turn up to 8; no items restore it |
 | Planet / Guild | Your organization; binding is generally permanent |
 | Home / Federation / Frontier planet | Three planet types |
 | Guild Battle / GVG | Inter-guild Guardian combat |
 | Guardian | Guild boss unit in guild battle |
 | Reward Center | UI that aggregates reward claims |
-| Blind box / embryo box | NFT box that opens into cattle or shards |
+| Blind box / embryo box | NFT box that opens into cattle or shards; odds: [16 Blind box odds](../16-blind-box.md) |
 | Hashrate | Weight for milk reward share |
 | Contribution | Guild contribution from tax and related actions |
 | Gas | On-chain transaction fee |

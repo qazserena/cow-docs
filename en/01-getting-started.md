@@ -40,8 +40,8 @@ Without cattle you can barely play the core loop. Ways to get one:
 
 | Method | Notes |
 |---|---|
-| Open a blind box | Open cattle boxes at the Breeding Institute; or portal IGO / mart events |
-| Buy on the NFT market | Buy calves / adults / Genesis cattle on the portal marketplace |
+| Open a blind box | Open cattle boxes at the Breeding Institute; or portal IGO / mart events (odds: [16](./16-blind-box.md)) |
+| Buy on the NFT market | Buy **calves / Genesis cattle** on the portal marketplace (Normal adults cannot be listed; see [13](./13-market.md)) |
 | Beta / event claims | Whitelisted users can claim on portal pages such as “Beta Assets” |
 | Referral rewards | Referrers may get boxes when conditions are met |
 

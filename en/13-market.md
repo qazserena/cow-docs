@@ -33,13 +33,30 @@ Combination rules (concept):
 - Stat conditions are mostly AND  
 - **Dead cattle** are auto-filtered out of normal lists  
 
+> Even if the UI still has an “adult” form filter, **Normal adult cattle cannot be newly listed** (see below). Listings that look “adult” are mainly **Genesis cattle** (no lifespan; always tradable).
+
+---
+
+## Which cattle can be sold
+
+This is an on-chain rule. If the portal detail page has no **Sell** button, it is usually this restriction — not a UI bug.
+
+| Asset | Can list on NFT market | Notes |
+|---|---|---|
+| **Normal calf** (not adult) | Yes | Detail page shows Sell; **USDT listings must be at least 150 USDT** (contract `Price-288`) |
+| **Normal adult cattle** | **No** | Cannot list after they grow up; **transfer** to another address is still allowed |
+| **Genesis cattle** | Yes | Not blocked by adult status |
+| **Boxes, planets, other NFTs** | By type | Follow the detail-page buttons and the contract |
+
+So: trade Normal cattle **before adulthood**. After adulthood they are for your own play (milk / combat / breeding) or wallet transfer only.
+
 ---
 
 ## Listing tips
 
 1. First **approve** the market contract in your wallet  
 2. Confirm the correct network (don’t mix mainnet / testnet)  
-3. Cattle that are staked, in combat, or on breeding CD may not list  
+3. **Normal adult cattle cannot be listed**; cattle that are staked, in combat, or on breeding CD may also fail to list  
 4. Price with fees and liquidity in mind — avoid dead listings forever  
 
 ---

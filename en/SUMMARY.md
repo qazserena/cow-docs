@@ -34,6 +34,7 @@
 ## Help
 
 * [15 FAQ](15-faq.md)
+* [16 Blind boxes — drops and odds](16-blind-box.md)
 
 ## Appendix
 

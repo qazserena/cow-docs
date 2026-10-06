@@ -33,7 +33,7 @@ Battle windows have historically included settings like “Friday night” — *
 
 Guardians may have passives like crit; leaders can equip **Guardian Armor** (defense-type boosts).
 
-Combat is still card-based, similar to the Arena; follow in-match rules.
+Combat is still card-based (including spirit / mana), same as the Arena — see [07](./07-arena.md).
 
 ---
 

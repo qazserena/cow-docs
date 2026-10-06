@@ -18,6 +18,8 @@ Route names below are common paths — follow the live menu.
 
 Note: some boxes **can only be opened in-game** — the page will say so.
 
+What each box can drop and the odds: **[16 Blind box odds](./16-blind-box.md)**.
+
 ---
 
 ## Mining / staking
@@ -70,4 +72,4 @@ Staking has lockups and APR configs — read rules and risks before acting.
 4. Confirm the tx; arrival may be delayed  
 5. Return to the game client, refresh or re-login to see assets  
 
-Related: market details → [13](./13-market.md); invites & referrals → [05](./05-breeding.md)
+Related: market details → [13](./13-market.md); invites & referrals → [05](./05-breeding.md); box odds → [16](./16-blind-box.md)
