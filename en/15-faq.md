@@ -25,6 +25,9 @@ Lifespan end or long neglect causes death and burn. Use Life Potion early and ke
 **Not enough stalls?**  
 Expand at the Academy; clear stalls occupied by dead cattle.
 
+**How do I upgrade farm / ranch level?**  
+There is no separate upgrade button. Expanding stalls, breeding, raising calves to adult, and using vitality / growth / life potions all grant **Farm XP**; filling the bar auto-levels you. Check it under Profile → Farm XP. Level 2 needs 200 XP (common portal invite / voucher gate). See [03 CowShed & Growth](./03-cowshed-and-growth.md).
+
 ---
 
 ## Milk

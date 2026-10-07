@@ -4,8 +4,8 @@ The CowShed is your ranch’s “home.” Almost all growth actions require catt
 
 ## Stalls
 
-- You start with a few stalls (commonly 2 by default), expandable up to a cap (commonly 8)  
-- Expansion costs **IRT**; price usually rises with each expansion  
+- You start with **2** stalls, expandable (current config up to about **16** — trust in-game)  
+- Expansion costs **IRT**; price rises with purchases (often about 500 → 700 → 1000 → … IRT)  
 - Expand from the **Academy** or CowShed-related UI  
 
 Dead cattle may still occupy stalls — clear them promptly or new cattle won’t fit.
@@ -53,20 +53,62 @@ After adulthood:
 
 ---
 
-## Personal ranch level (1–6)
+## Farm / personal ranch level (1–6)
 
-Higher ranch level raises **milk reward multiplier** and **combat reward multiplier** (e.g. from about 1.05 / 1.1 up toward about 1.3 / 1.4 — trust in-game values).
+In the profile UI this shows as **Farm XP**; portal quests often say **farm / ranch level** — same system.  
+There is **no separate “Upgrade” button**: when XP fills the current tier, the level rises **automatically** on-chain.
 
-### Where upgrade XP comes from (example rules)
+### What leveling up does
 
-| Action | XP (approx.) |
+| Display level | Milk reward multiplier (approx.) | Combat score bonus (approx.) |
+|---|---|---|
+| 1 | ×1.00 | ×1.00 |
+| 2 | ×1.05 | ×1.10 |
+| 3 | ×1.10 | ×1.15 |
+| 4 | ×1.15 | ×1.20 |
+| 5 | ×1.20 | ×1.25 |
+| 6 | ×1.30 | ×1.40 |
+
+Also unlocks personal tech nodes in batches; portal invite / voucher activities often require **farm level ≥ 2**.
+
+### Where to check level & XP
+
+Open **Profile** (avatar) → **Farm XP** bar (current / needed for next level).
+
+### Where upgrade XP comes from
+
+| Action | XP |
 |---|---|
-| Unlock stalls 3–8 | +50–+80 per tier |
-| Each successful breeding | +20 |
-| Raise a calf to adult | +20 |
-| Use vitality / growth / life potions | +1–+25 depending on item |
+| Each stall expansion (from the 3rd stall on) | +50 / +60 / +80 / +100 / +120 / +150 / +180 (rises by tier; each tier covers two purchases) |
+| Each successful breeding (get a box) | +20 |
+| Each calf raised to adult | +20 |
+| Growth Boost pack (N / M / H) | +3 / +5 / +9 each |
+| Vitality pack (N / M / H) | +3 / +5 / +9 each |
+| Life Potion (N / M / H) | +7 / +20 / +38 each |
 
-XP needed rises with level (e.g. 200 / 300 / 450 / 675 / 1350…).
+Feeding forage alone does **not** grant farm XP; maturing a calf with a growth pack still grants the adult +20.
+
+### XP needed per level
+
+| Step | XP needed |
+|---|---|
+| 1 → 2 | 200 |
+| 2 → 3 | 300 |
+| 3 → 4 | 450 |
+| 4 → 5 | 675 |
+| 5 → 6 | 1350 |
+| Already Lv 6 | XP still accumulates; no further tier |
+
+### Fast path to level 2 (common portal gate)
+
+Any mix that reaches **200** XP auto-levels you, for example:
+
+1. **Expand stalls** a few times (+50–+60 early), then breed or raise calves  
+2. **Breed** about **10** successful matings (10 × 20)  
+3. **Raise** about **10** calves to adult  
+4. **Items** — vitality / growth / life potions to fill the gap  
+
+Expand at the **Academy**; breed at the **Breeding Institute**; raise and use items in the **CowShed**.
 
 ### What else level unlocks
 

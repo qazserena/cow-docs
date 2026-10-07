@@ -13,7 +13,7 @@ Numbers may change with operations; this handbook focuses on **mechanics**. For 
 |---|---|
 | First play, how to log in | [01 Getting Started](./01-getting-started.md) |
 | What IRT / IRG, cattle NFTs, and blind boxes are | [02 Tokens & Core Assets](./02-tokens-and-assets.md) |
-| CowShed, feeding, growth, ranch level | [03 CowShed & Growth](./03-cowshed-and-growth.md) |
+| CowShed, feeding, growth, **how to upgrade farm level** | [03 CowShed & Growth](./03-cowshed-and-growth.md) |
 | Stake cows for milk mining, badge bonuses | [04 Milk Factory · Milk Mining](./04-milk-factory.md) |
 | Breeding, breeding rental, opening embryo boxes | [05 Breeding Institute](./05-breeding.md) |
 | Buy items, expand stalls, star-up, tech tree | [06 Academy](./06-academy.md) |

@@ -9,6 +9,7 @@
 | Genesis cattle                      | Rare eternal-lifespan cattle NFT                         |
 | Normal cattle                       | Mainstream cattle NFT — can star-up, has lifespan        |
 | CowShed / Stable                    | Facility to house and raise cattle                       |
+| Farm level / ranch level / Farm XP  | Profile “Farm XP” (levels 1–6); expand, breed, raise calves, use potions — auto-levels when full. See [03](../../growth-and-earnings/03-cowshed-and-growth.md) |
 | Milk Factory / Factory              | Stake cows to mine IRT                                   |
 | Breeding Institute                  | Breeding, open boxes, breeding rental                    |
 | Academy                             | Shop, expand stalls, star-up, tech tree                  |

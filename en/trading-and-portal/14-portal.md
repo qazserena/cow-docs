@@ -38,7 +38,7 @@ Staking has lockups and APR configs — read rules and risks before acting.
 | ----------------------------------- | ------------------------------------------------------------------------------ |
 | **`/airdrop`**                      | Claim tokens / NFTs by list; often has open/close windows                      |
 | **`/betaAssets`**                   | Beta assets: whitelist claims for planets / cattle / boxes / test tokens, etc. |
-| **Beta invite** `/BetaInvite`, etc. | Invite friends to finish tasks for USDT (capped)                               |
+| **Beta invite** `/BetaInvite`, etc. | Invite friends to finish tasks for USDT (capped); valid invites often require **farm level ≥ 2** — see [03](../growth-and-earnings/03-cowshed-and-growth.md) |
 
 ***
 
@@ -46,7 +46,7 @@ Staking has lockups and APR configs — read rules and risks before acting.
 
 | Page                                | Content                                                                                                                       |
 | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| **Voucher Center** `/voucherCenter` | Redeem forage, vitality packs, growth packs, skin boxes, rename cards, etc.; may require CowShed level or earnings thresholds |
+| **Voucher Center** `/voucherCenter` | Redeem forage, vitality packs, growth packs, skin boxes, rename cards, etc.; often needs **farm level ≥ 2** and earnings thresholds (see [03](../growth-and-earnings/03-cowshed-and-growth.md)) |
 | **Game Store** `/gameStore`         | Trade vouchers and related goods                                                                                              |
 
 ***

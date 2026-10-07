@@ -80,9 +80,10 @@ Click buildings for each mode; use the side bar for daily claims and social.
 1. Log in and bind a planet  
 2. Get at least 1–2 cattle and put them in the CowShed  
 3. Feed forage until calves become adults (or buy adults)  
-4. Send cows to the Milk Factory; take bulls through a few Arena PVE fights  
-5. Check in daily, do quests, claim from the Reward Center  
-6. Learn guild benefits and tax rates; then breeding, star-up, and the tech tree when ready  
+4. Build **Farm XP** (expand / breed / raise / potions) and aim for **level 2** early (common portal invite & voucher gate — see [03](./03-cowshed-and-growth.md))  
+5. Send cows to the Milk Factory; take bulls through a few Arena PVE fights  
+6. Check in daily, do quests, claim from the Reward Center  
+7. Learn guild benefits and tax rates; then breeding, star-up, and the tech tree when ready  
 
 ---
 
