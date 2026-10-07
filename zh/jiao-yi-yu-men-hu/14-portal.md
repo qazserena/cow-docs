@@ -26,7 +26,6 @@
 | ----------------------------------- | --------------------- |
 | **星际挖矿** `/farm/interstellarmining` | 质押 USDT 挖 IRG 等       |
 | **年终质押** `/YearEndMining`           | IRT / IRG 双币多档期质押     |
-| **Lazio 质押** `/LazioMining`         | 质押 IRT 得 LAZIO，有活动窗口期 |
 
 质押有锁仓与年化配置，操作前读清规则与风险。
 

@@ -26,7 +26,6 @@ Note: some boxes **can only be opened in-game** — the page will say so.
 | -------------------------------------------------- | ----------------------------------------- |
 | **Interstellar Mining** `/farm/interstellarmining` | Stake USDT to mine IRG, etc.              |
 | **Year-End Staking** `/YearEndMining`              | Multi-period IRT / IRG dual-token staking |
-| **Lazio Staking** `/LazioMining`                   | Stake IRT for LAZIO during event windows  |
 
 Staking has lockups and APR configs — read rules and risks before acting.
 

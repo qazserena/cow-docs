@@ -28,7 +28,6 @@ What each box can drop and the odds: **[16 Blind box odds](./16-blind-box.md)**.
 |---|---|
 | **Interstellar Mining** `/farm/interstellarmining` | Stake USDT to mine IRG, etc. |
 | **Year-End Staking** `/YearEndMining` | Multi-period IRT / IRG dual-token staking |
-| **Lazio Staking** `/LazioMining` | Stake IRT for LAZIO during event windows |
 
 Staking has lockups and APR configs — read rules and risks before acting.
 
