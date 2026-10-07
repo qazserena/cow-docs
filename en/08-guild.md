@@ -27,7 +27,7 @@ Common ranks, low to high:
 - Elite: below Vice Leader; exact permissions follow in-game settings  
 - Member / Trainee: pay tax, claim benefits, join combat and quests  
 
-Some notices and renames have cooldowns (e.g. once every 30 days).
+Some notices and renames have cooldowns (e.g. once every 8 hours).
 
 ---
 
