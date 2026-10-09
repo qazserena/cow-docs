@@ -8,8 +8,8 @@ In Legend Ranch, **planet ≈ guild**. After you bind a planet, tax, benefits, a
 
 | Type | Role | How to get | Population cap | Tax | Federation slots | Guild battle |
 |---|---|---|---|---|---|---|
-| **Home planet** | End-game planet, the "great powers" | Scarce card (100 on-chain), tradable; Frontier upgrade | 10,000 | 20% | up to 100 | Can sign up |
-| **Frontier planet** | Starter planet, "pre-Home" | One per beta starter pack; not tradable | 5,000 | 10% | not open in beta | Cannot sign up (battle pool still accrues) |
+| **Home planet** | End-game planet, the "great powers" | **One per beta starter pack**; tradable; Frontier upgrade | 10,000 | 20% | up to 100 | Can sign up |
+| **Frontier planet** | Starter planet, "pre-Home" | Event hand-outs (early beta packs issued some); not tradable | 5,000 | 10% | not open in beta | Cannot sign up (battle pool still accrues) |
 | **Federation planet** | Affiliate of a Home | Home member applies, Home leader approves → minted | 1,000 | set on application (< 20%); members actually pay the mother Home's 20% | — | Fights with the mother planet |
 
 Rates are fixed by type and **leaders cannot change them**. Values come from the on-chain contract.
@@ -25,7 +25,7 @@ Rates are fixed by type and **leaders cannot change them**. Values come from the
 - Battle pool still accrues: the 30% of tax routed to the battle pool accumulates and becomes usable after upgrading.  
 - Upgradable: leader → "Guild Management → Settings → Upgrade to Home", burning about **$500 worth of IRT** (converted at the IRT price at upgrade time; the dialog shows the exact amount and the accrued battle pool). Population, federation slots, tax, and guild-battle eligibility unlock at once.  
 
-> Every beta starter pack carries a Frontier card — "everyone can found a guild" is deliberate, to stress-test the guild system. To fight guild battles, upgrade to Home or join someone's Home.
+> Every beta starter pack carries a Home card — "everyone can found a guild and fight guild battles" is deliberate, to stress-test the guild system. Frontier holders (early packs or events) who want guild battles can upgrade to Home or join someone's Home.
 
 ### Founding your own guild
 
@@ -189,7 +189,7 @@ A: The guild requires approval. Apply, wait for approval, then "Confirm Join" wi
 **Q: I'm vice leader; where is "Set Position"?**  
 A: Ranks and settings are leader-only; vice leaders approve joins and kick lower ranks.
 
-**Q: I founded a guild with the pack's Frontier planet — why can't I sign up for guild battle?**  
+**Q: I founded a guild with a Frontier planet — why can't I sign up for guild battle?**  
 A: Frontier planets can't; the button says "Upgrade to Home to sign up". Upgrade in "Guild Management → Settings → Upgrade to Home", or join a Home planet.
 
 **Q: What does the upgrade cost and what stays?**  

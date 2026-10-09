@@ -21,18 +21,18 @@ View, use, and craft here. Using EXP cards / batteries / HP potions also adds fa
 | Rename Card | One rename | First rename is free, then 1 card each | — |
 | Breed Card (Genesis) | Genesis breed count +1 | Genesis only | — |
 
-### Combat (used in the Arena / backpack; server counts per day)
+### Combat (used in the Arena / backpack; counted per day)
 
-| Item | Effect | Effective per day |
+| Item | Effect | Per day |
 |---|---|---|
 | Pass Card | PVE win +1 | 2 |
-| Score Protection | Keep rating when the next Ladders match would drop it | 2 |
-| PVE Power Card | ATK / DEF / STA +10% in PVE (no stacking) | 3 |
+| Score Protection | Keep rating when the next Ladders match would drop it | 1 |
+| PVE Power Card | ATK / DEF / STA +10% in PVE (no stacking) | 2 |
 | Shuffle Card | Redraw hand in battle (**not yet enabled** — skip it for now) | — |
 | Power Potion | 24 h: all fielded cattle ATK +4000 / DEF +3000 / STA +5000 (guild battle) | stacks to extend |
 | Guardian Armor | Leader only; guardian defense +20% this guild battle | 1 per period |
 
-Cards beyond the daily limit are consumed with no effect.
+At the daily limit the game says "max N per day" and the card is not consumed.
 
 ### Cosmetic / social
 

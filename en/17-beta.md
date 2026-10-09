@@ -16,7 +16,7 @@ Opens every door of the game:
 
 | Asset | Amount | For |
 |---|---|---|
-| Frontier planet card | 1 | Found a guild and lead it (population 5,000, tax 10%, no guild battle; upgradable to Home, see [08](./08-guild.md)) |
+| Home planet card | 1 | Found a guild and lead it, eligible for guild battle right away (population 10,000, tax 20%, see [08](./08-guild.md)) |
 | Genesis cattle | 1 | High stats, eternal, tradable |
 | Adult bull / adult cow | 1 each | Bull for the Arena, cow for milk; breed them together |
 | Normal calf | 1 | Experience the feed → adult path |

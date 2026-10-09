@@ -69,8 +69,8 @@ Spirit is the card resource — not shed energy, not station energy. You start w
 **Win chest does nothing / can't claim?**  
 Chests settle **yesterday's** wins; today's are claimable tomorrow. Under 10 wins yesterday earns no tier; one claim per mode per day; a locked Rewards Center also blocks it.
 
-**Pass / protection card had no effect?**  
-Server daily limits: Pass 2, Score Protection 2, PVE Power 3; extra cards are consumed with no effect.
+**Pass / protection card refused — "max N per day"?**  
+Daily limits: Pass 2, Score Protection 1, PVE Power 2, reset at 00:00 Beijing time; at the limit the card is not consumed.
 
 **Can't join guild battle?**  
 You must be on the leader's roster, in the battle phase, and in a Home guild that signed up (Federation members fight with the mother planet).

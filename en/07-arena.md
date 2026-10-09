@@ -19,7 +19,7 @@ Skin stats, PVE power card, and combat tech are applied on entry. A Normal bull'
 
 - **20 floors**, cleared in order; you alone vs a floor monster, you always go first  
 - Monsters scale with floor: floor 1 ATK 1000 / DEF 100 / HP 1500 → floor 10 ATK 2300 / DEF 640 / HP 3750 → floor 20 ATK 13000 / DEF 8000 / HP 14000  
-- Wins count toward PVE daily wins; **Pass cards** add +1 win directly (2 effective per day)  
+- Wins count toward PVE daily wins; **Pass cards** add +1 win directly (2 per day)  
 - Reward: next day's PVE **win chest (IRG)**  
 
 ### 2) Match (PVP)
@@ -168,15 +168,15 @@ After **10 Match wins** today you can submit a battle report in the Arena (walle
 - Submit today, claim that day's share **from the next day**; planet tax applies on claim  
 - Max 20 wins per day per player; repeated submissions only add the increment  
 
-### Daily card limits (server-side)
+### Daily card limits
 
-| Item | Effective per day | Effect |
+| Item | Per day | Effect |
 |---|---|---|
 | Pass Card | 2 | PVE win +1 |
-| PVE Power Card | 3 | +10% to all three stats in PVE (no stacking) |
-| Score Protection | 2 | Keep rating when a Ladders match would drop it |
+| PVE Power Card | 2 | +10% to all three stats in PVE (no stacking) |
+| Score Protection | 1 | Keep rating when the next Ladders match would drop it |
 
-Cards beyond the limit are consumed with no effect. Buy them in the **guild shop** (200 IRT each).
+At the limit the game says "max N per day" and the card is not consumed. Buy them in the **guild shop** (200 IRT each).
 
 ---
 

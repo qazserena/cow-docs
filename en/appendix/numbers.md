@@ -89,7 +89,7 @@ Key numbers from every chapter on one page. All are current on-chain / game-serv
 | ELO | Win 1.15 loss 0; K = 40 (<1800) / 36.67 (1800 – 2400) / 20 |
 | Weekly chests | 1 – 3 UR · 4 – 10 SSR · 11 – 50 SR |
 | PVP report daily pool | 10,000 IRT, submit at 10 wins |
-| Card daily limits (effective) | Pass 2 · Protection 2 · Power 3 |
+| Card daily limits | Pass 2 · Protection 1 · Power 2 |
 | PVE floors | 20 |
 
 ## Guild
