@@ -56,6 +56,17 @@ Assets (cattle, blind boxes, skins, badges, planets, items) are mostly on-chain 
 
 ---
 
+## Official Channels
+
+| Channel | Link |
+|---|---|
+| Website | [cowgalaxy.com](https://cowgalaxy.com/) |
+| Telegram | [t.me/cowgalaxy](https://t.me/cowgalaxy) |
+| X / Twitter | [x.com/cowgalaxy2026](https://x.com/cowgalaxy2026) |
+| Forum (BBS) | [bbs.cowgalaxy.com](https://bbs.cowgalaxy.com) |
+
+---
+
 ## Background Story (optional)
 
 In the CowGalaxy universe, cattle form two great interstellar federations by belief — the **Galactic Empire** and the **Explorer Alliance**.  

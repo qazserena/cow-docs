@@ -1,6 +1,6 @@
 # 15 FAQ
 
-Look up by “what I’m seeing.” If you’re still stuck, keep screenshots, time, and wallet address (never share private keys) and contact official support / community admins.
+Look up by “what I’m seeing.” If you’re still stuck, keep screenshots, time, and wallet address (never share private keys) and contact official support / community admins — Telegram: [t.me/cowgalaxy](https://t.me/cowgalaxy).
 
 ---
 

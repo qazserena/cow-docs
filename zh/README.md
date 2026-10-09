@@ -56,6 +56,17 @@
 
 ---
 
+## 官方渠道
+
+| 渠道 | 链接 |
+|---|---|
+| 官网 | [cowgalaxy.com](https://cowgalaxy.com/) |
+| Telegram | [t.me/cowgalaxy](https://t.me/cowgalaxy) |
+| X / Twitter | [x.com/cowgalaxy2026](https://x.com/cowgalaxy2026) |
+| 论坛（BBS） | [bbs.cowgalaxy.com](https://bbs.cowgalaxy.com) |
+
+---
+
 ## 背景故事（可选阅读）
 
 在牛宇宙（CowGalaxy）中，牛牛因信仰不同组成两大星际联邦——**银河帝国**与**探索者星盟**。  
