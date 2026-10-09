@@ -1,70 +1,60 @@
 # 13 NFT Marketplace
 
-The marketplace is for buying and selling **cattle, blind boxes, planets**, and other on-chain assets (escrow listings; settlement currencies follow the page).
+The marketplace trades **cattle, boxes, planets** and other on-chain assets (escrow listings, settled in IRT or USDT).
 
-The in-game “Marketplace” building usually jumps to the **portal** market page.
+The in-game "Marketplace" building jumps to the **portal** marketplace (cowgalaxy.com/nftMarket).
 
 ## What you can do
 
-| Feature | Notes |
+| Function | Notes |
 |---|---|
-| Browse / filter & buy | Filter by bloodline, gender, form, stars, stats |
-| List for sale | Pick asset, set price, approve, then list |
+| Browse / filter / buy | Filter by bloodline, gender, form, stars, stats; sort by newest / lowest / highest price |
+| List for sale | Card Package → NFT detail → Sell: pick currency (IRT / USDT), set price, approve, list |
 | My listings | View, delist |
-| Trade history | Past buys and sells |
+| History | Past trades |
 
-The platform takes a fee (rate follows the contract / page display).
-
----
-
-## Filters (must-read for buyers)
-
-Common filters:
-
-- **Bloodline**: Genesis / Normal  
-- **Gender**: bull / cow  
-- **Form**: blind box / calf / adult  
-- **Stars**: 0–3 (usually only meaningful for Normal adults)  
-- **Stat ranges**: base / combat / milk, etc.  
-
-Combination rules (concept):
-
-- Bloodline, gender, form, and stars often combine with OR-style multi-select  
-- Stat conditions are mostly AND  
-- **Dead cattle** are auto-filtered out of normal lists  
-
-> Even if the UI still has an “adult” form filter, **Normal adult cattle cannot be newly listed** (see below). Listings that look “adult” are mainly **Genesis cattle** (no lifespan; always tradable).
+Platform fee **2%** (deducted from the seller's proceeds). Bought NFTs go to the buyer's wallet; cattle must be put back in the shed to use.
 
 ---
 
-## Which cattle can be sold
+## Filters (buyers, read this)
 
-This is an on-chain rule. If the portal detail page has no **Sell** button, it is usually this restriction — not a UI bug.
+- **Bloodline**: Genesis / Normal; **Gender**: bull / cow; **Form**: box / calf / adult; **Stars**: 0 – 3  
+- **Stat ranges**: base / combat / milk; Normal cattle show values already scaled by the star multiplier  
+- **Dead cattle** are filtered out automatically  
 
-| Asset | Can list on NFT market | Notes |
-|---|---|---|
-| **Normal calf** (not adult) | Yes | Detail page shows Sell; **USDT listings must be at least 150 USDT** (contract `Price-288`) |
-| **Normal adult cattle** | **No** | Cannot list after they grow up; **transfer** to another address is still allowed |
-| **Genesis cattle** | Yes | Not blocked by adult status |
-| **Boxes, planets, other NFTs** | By type | Follow the detail-page buttons and the contract |
-
-So: trade Normal cattle **before adulthood**. After adulthood they are for your own play (milk / combat / breeding) or wallet transfer only.
+> Even with an "adult" filter, **Normal adults cannot be newly listed** (next section). Adults you can buy are mostly **Genesis**.
 
 ---
 
-## Listing tips
+## Which cattle can be sold / transferred
 
-1. First **approve** the market contract in your wallet  
-2. Confirm the correct network (don’t mix mainnet / testnet)  
-3. **Normal adult cattle cannot be listed**; cattle that are staked, in combat, or on breeding CD may also fail to list  
-4. Price with fees and liquidity in mind — avoid dead listings forever  
+Hard on-chain rules. When the portal detail page has no "Sell" button, this is usually why — not a broken page.
+
+| Asset | List on marketplace | Direct wallet transfer | Notes |
+|---|---|---|---|
+| **Normal calf** (not adult) | Yes | **No** | When priced in USDT, **minimum 150 USDT** |
+| **Normal adult** | **No** | **No** | After adulthood: own use only (milk / combat / breeding / star-up material) |
+| **Genesis** | Yes | Yes | No adulthood restriction |
+| **Boxes, planet cards, skins, badges, vouchers** | By category | Yes | Frontier planet cards are not tradable |
+
+Normal cattle (adult or not) can only be moved by game contracts, so wallet / portal "Transfer" fails for them. To trade a Normal cattle, list it **before adulthood**.
 
 ---
 
-## Safety tips
+## Listing notes
 
-- Enter the market only via the official portal  
-- Verify contract addresses and domains  
-- For large trades, test with a small amount first  
+1. **Approve** the marketplace contract in your wallet first  
+2. Check the network (mainnet / testnet)  
+3. **Normal adults cannot be listed**; cattle in the shed (staking / fighting / feeding / cooldown) must be removed to your wallet first  
+4. Price with the 2% fee and liquidity in mind; delisting is free  
+
+---
+
+## Safety
+
+- Use only the official portal entry  
+- Verify contract address and domain  
+- Test with a small trade before large ones  
 
 Related: cattle stats → [02](./02-tokens-and-assets.md); other portal features → [14](./14-portal.md)

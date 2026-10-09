@@ -1,82 +1,77 @@
 # 04 Milk Factory · Milk Mining
 
-The Milk Factory is where **cows** earn **IRT**: stake adult cows and share the server-wide milk pool by hashrate.
+The Milk Factory is where **cows** earn **IRT**: stake adult cows and share the server-wide milk pool by hashpower.
 
-## Prerequisites
+## Requirements
 
-- You have an **adult cow**  
-- The cow has enough **vitality** (determines how long she can stay staked)  
-- The cow is in a usable state (not in combat, listed, or other conflicting states)  
+- An **adult cow** in the shed, not feeding / in breeding cooldown / otherwise busy  
+- The cow has **energy**: the energy you commit at staking sets the milking duration (1 energy = 60 s)  
 
 ---
 
 ## How to play
 
-1. Open the **Milk Factory** building on the main map  
-2. Select an adult cow and **stake**  
-3. Wait for output to accumulate and **claim rewards** anytime  
-4. When vitality runs out or the stake ends, production stops — **redeem** → feed in the CowShed → stake again  
+1. Open the **Milk Factory**  
+2. Pick an adult cow, enter the energy to commit, **Stake**  
+3. Output accrues per second; **Claim** any time  
+4. **Renew** before expiry (commit more energy); after expiry it stops — **Redeem** → feed in the shed → stake again  
 
-While staked, the cow usually cannot breed, list, or do other conflicting actions.
-
----
-
-## How rewards are calculated (mechanics)
-
-Rough formula:
-
-> Your reward ≈ daily milk pool × (your hashrate ÷ server total staked hashrate) × ranch-level bonus
-
-- **Hashrate** comes mainly from the cow’s milk yield, milk rate, and similar stats  
-- The larger the **server total hashrate**, the smaller each cow’s share (competition)  
-- **Ranch level** adds a reward multiplier (see [03](./03-cowshed-and-growth.md))  
-- Daily pool size is contract-configured (historically “release a set amount of IRT per day”; adjustable)  
-
-Exact numbers are on the in-game panel.
+- Duration never exceeds the cow's remaining lifespan  
+- A staking cow cannot breed, leave the shed, or be listed  
+- Milk tech "Scientific Production" lowers the energy consumed (up to −20%)  
 
 ---
 
-## Badge bonuses
+## How income is calculated
 
-The Milk Factory can equip a **badge** (usually only **one** at a time) for extra hashrate:
+> Your income = daily server pool × (your hashpower ÷ total staked hashpower)
 
-| Badge tier | Approx. hashrate bonus |
-|---|---|
-| Bronze | +1000 |
-| Silver | +2000 |
-| Gold | +6000 |
-| Platinum | +30000 |
-| Diamond | +40000 |
-| Glory | +60000 |
+- **Daily server pool**: currently **200,000 IRT / day** (contract setting, released per second)  
+- **One cow's hashpower** = (Milk × Lactation Booster + Milk Rate × Milking Kit) ÷ 2 × **farm level multiplier** (1.00 – 1.30)  
+- A Normal cow's milk stats already include the star multiplier (a 0-star cow has only 25% of base), so **star-up matters a lot for milk**  
+- The more total hashpower on the server, the smaller each cow's share  
 
-Note: badges usually only apply after you have **at least 1 cow staked**.  
-How to get and craft badges: [12 Backpack · Items · Skins · Badges](./12-backpack.md).
+Exact numbers follow the in-game panel.
+
+---
+
+## Badge bonus
+
+Equip **one badge** at the Milk Factory for extra hashpower:
+
+| Badge | Bronze | Silver | Gold | Platinum | Diamond | Master |
+|---|---|---|---|---|---|---|
+| Hashpower | +1000 | +2000 | +6000 | +30000 | +40000 | +60000 |
+
+- The badge only works while **at least one cow is staked**; its duration follows the latest-expiring staked cow  
+- Removing the badge settles the income it produced  
+- Badge sources and crafting: [12](./12-backpack.md)  
 
 ---
 
 ## Tax
 
-When you claim milk rewards (IRT), tax is auto-deducted at your bound planet’s **tax rate**:
+Milk claims are taxed at your planet rate (Home 20%, Frontier 10%, Federation members at the mother Home's 20%):
 
-- Tax amount counts as guild **contribution**  
-- Default rate is often about 20%; Home planet leaders can adjust within a band  
+- The tax counts toward your guild **contribution** (the guild quest "contribute tax" tracks it)  
+- Tax flows into the guild pools: 70% normal tax (leader withdraws or funds daily benefits), 30% guild battle pool  
 
-Details: [08 Planets & Guilds](./08-guild.md).
+See [08 Planets & Guilds](./08-guild.md).
 
 ---
 
 ## FAQ
 
-**Q: Why are my rewards so small?**  
-A: High server stake, low personal hashrate, low ranch level, no badge, or claiming over a very short window all make rewards look small.
+**Q: Why is my income so low?**  
+A: Heavy server staking, low own hashpower (0-star Normal cows especially), low farm level, no badge, or short claim intervals.
 
-**Q: Can a staked cow breed?**  
-A: Usually you must redeem first. Follow in-game prompts.
+**Q: Can a staking cow breed?**  
+A: No — redeem first.
 
-**Q: What happens when vitality hits zero?**  
-A: Production stops. Redeem, feed, then stake again.
+**Q: What if energy runs out?**  
+A: Milking stops at expiry. Redeem, feed, re-stake — or renew before expiry.
 
-**Q: Do Genesis cows differ from Normal cows?**  
-A: Higher stats usually mean stronger hashrate; Genesis also has the lifespan advantage. The mechanism is the same.
+**Q: Genesis vs Normal cows?**  
+A: Genesis stats apply at 100% with higher base, so hashpower is usually several times a 0-star Normal cow's; eternal life means no death before expiry.
 
 Next: [05 Breeding Institute](./05-breeding.md) or [07 Arena](./07-arena.md)

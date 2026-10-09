@@ -1,83 +1,108 @@
 # 11 Daily Play
 
-This chapter covers what you can claim and do every day you log in: check-in, quests, mail, Reward Center, leaderboards.
+Everything you can claim or do each day: check-in, quests, mail, Rewards Center, leaderboards.
+
+All "daily" resets happen at **00:00 Beijing time**; "weekly" at **Monday 00:00**.
 
 ## Check-in
 
-- Once per day  
-- Rewards may be tokens or items, configured by ops  
-- Rewards usually land in the **Reward Center** or mail — claim again there (some need on-chain)  
+- Once per day; the reward is fixed (set by ops — IRG / items) and goes to the **Rewards Center** (tax-free)  
+- If the Rewards Center has a pending claim order, check-in says "locked"; finish that wallet transaction first  
 
-Entry: main side bar “Check-in.”
+Entry: sidebar "Check-in".
 
 ---
 
 ## Quests
 
-Quests usually split into:
+Two tabs — "Personal" and "Guild" — grouped as daily / weekly / achievements. Claim on completion; rewards go to the Rewards Center (tax-free). Format: IRG + items.
 
-| Tab | Examples |
+### Daily (personal)
+
+| Quest | Reward |
 |---|---|
-| **Personal** | PVE sweeps, stake cows, PVP/PVE matches, expand stalls, craft, breed, rental listings, ranch level, feed to adult, star-up, max a tech, etc. |
-| **Guild** | Party Arena, 5v5, pay tax, form intimacy bonds, join guild battle, etc. |
-| **Daily / Weekly / Achievement / Newbie** | Grouped by refresh cycle |
+| Milk Factory: 2 / 4 / 6 / 8 cows actively staked today | 1000 IRG + Supreme Hay ×10 / 3000 IRG + Supreme Hay ×20 / Prime Battery ×1 / Supreme Battery ×1 |
+| PVP matches 10 / 15 / 20 | 1000 IRG + Supreme Hay ×10 / 2000 IRG + Supreme Hay ×10 / 1000 IRG + Supreme Battery ×1 |
+| PVE matches 10 / 15 / 20 | 100 IRG / 200 IRG / 500 IRG + Prime Battery ×1 |
 
-- Claim after meeting conditions  
-- Rewards go to the Reward Center  
-- Daily-type quests usually reset at UTC 0 (follow in-game tips)  
+### Daily (guild)
+
+| Quest | Reward |
+|---|---|
+| 5 Arena team matches with guild members | 1000 IRG + Supreme Hay ×10 |
+| 2 PVE sweeps (Pass cards) | 1000 IRG + Supreme Hay ×10 |
+| 3 5v5 matches with guild members | 2000 IRG + Battery ×1 |
+
+### Weekly (guild)
+
+| Quest | Reward |
+|---|---|
+| Contribute 100 / 200 / 300 / 400 IRT of tax to the guild | 500 IRG + Battery / 1000 IRG + Battery / 1500 IRG + Prime Battery / 2000 IRG + Supreme Battery |
+| Form a bond with a guild member | 1000 IRG + Supreme Battery |
+| Take part in one guild battle | 1000 IRG + Supreme Battery |
+
+### Achievements (one-time)
+
+| Quest | Reward |
+|---|---|
+| Expand the shed once / craft a cattle once / breed once | 5000 IRG each |
+| List one rental | 1000 IRG |
+| Raise one calf to adult | 1000 IRG |
+| Ranch level 2 / 3 / 4 / 5 / 6 | 2000 IRG + Supreme EXP Card / 5000 IRG + Supreme Battery / 5000 IRG + Supreme Battery + Supreme EXP Card / 10000 IRG + same / 20000 IRG + Supreme Battery ×2 + Supreme EXP Card ×2 |
+| Star up a Normal cattle to 1 / 2 / 3 | 5000 IRG / 10000 IRG / **1 cattle box** |
+| Max each of the 9 tech nodes | 10000 IRG each |
+
+Guild-battle quests appear only for Home planet members.
 
 ---
 
 ## Mail
 
-- System mail, event mail, compensation mail, etc.  
-- May include attachments: tokens, items, NFTs, etc.  
-- Supports one-click claim (on-chain attachments need wallet confirm)  
-
-Taxed attachments go through planet tax logic.
+- System mail (server-wide / targeted by ops), group mail (auto-delivered by join-date rules), referral reward mail, etc.  
+- May carry attachments: tokens, items, NFTs, boxes; **Claim All** supported, attachments go to the Rewards Center (tax-free)  
+- Mark read / delete; some mail expires (referral mail after 10 days) — claim in time  
 
 ---
 
-## Reward Center
+## Rewards Center
 
-Aggregates rewards from many sources, for example:
+Collects rewards from everywhere into two pools: **tax-free** (check-in, quests, mail, guild benefits, Ladders chests) and **taxable** (Match win chest…).
 
-- Check-in  
-- Mail attachments  
-- Arena win chests / battle-report claims  
-- Guild benefits  
-- Quest rewards  
+### Claim flow
 
-### Claim tips
+1. Click "Claim" → the server creates an **on-chain claim order** (server-signed)  
+2. Confirm in wallet; assets arrive; the taxable pool is taxed at your planet rate  
+3. Until the order completes, **the Rewards Center is locked**: check-in, mail, benefits, and chests all say "locked"  
+4. It unlocks automatically after the transaction; if the tx succeeded but it still shows locked, reopening the Rewards Center reconciles it  
 
-1. Some rewards still need a **wallet on-chain confirm** after you tap claim  
-2. Distinguish **taxed / tax-free**  
-3. When the network is congested, wait — don’t spam and burn duplicate Gas  
+### Notes
+
+- Under congestion, wait instead of spamming (duplicate gas)  
+- On testnet, top up test ETH first if gas runs out  
 
 ---
 
 ## Leaderboards
 
-| Board | Notes |
-|---|---|
-| Ladder weekly | Arena Ladders; periodic settlement and rewards |
-| Guild battle points | Longer-term guild strength |
-| Guild battle weekly damage | Offense contribution |
-| Guild battle weekly healing | Heal contribution |
+| Board | Period | Notes |
+|---|---|---|
+| Arena Ladders | Weekly | ≥ 1100 to appear; settled Monday 00:00; top 50 get UR / SSR / SR chests |
+| Guild battle points | Permanent | Guild strength; sets guild battle divisions |
+| Guild battle damage | Weekly | Personal attack contribution |
+| Guild battle healing | Weekly | Personal healing contribution |
 
-Portal ranch intro pages may also show milk / breeding / contribution weekly boards.
-
-Settlement often at daily 0:00 and weekly Mondays (trust live schedule).
+In game: Arena "Ranking" and the guild events page; portal `/social/leaderboards` shows this week / last week / all-time and your rank when connected.
 
 ---
 
-## Suggested daily checklist
+## Suggested daily list
 
 1. Check in  
-2. Clear quests (personal + guild)  
-3. Claim Milk Factory output  
-4. Play Arena entries / win chests that matter  
-5. Claim everything in the Reward Center  
-6. Check guild benefits and whether guild battle is live  
+2. Clear quests (personal + guild): stake cows, hit PVP / PVE tiers, sweep with 2 Pass cards  
+3. Milk Factory: claim, renew  
+4. Arena: claim yesterday's two win chests; submit a PVP report at 10 wins  
+5. Claim everything in the Rewards Center and confirm on-chain  
+6. Check guild benefits and guild battle status  
+7. During beta: claim the portal daily supply (every 24 h)  
 
-Related: guild benefits → [08](./08-guild.md); combat → [07](./07-arena.md)
+Related: guild benefits → [08](./08-guild.md); combat → [07](./07-arena.md); beta → [17](./17-beta.md)

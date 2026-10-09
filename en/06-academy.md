@@ -1,106 +1,100 @@
 # 06 Academy
 
-The Academy (UI copy may also say Institute / Academy) mainly does four things:
+The Academy (also labelled Tech Institute in places) does four things:
 
-1. **Item shop** — buy forage and growth / combat items  
-2. **Expand CowShed** — add stalls  
-3. **Craft / star-up / shard craft** — strengthen Normal cattle or craft new ones  
-4. **Personal tech tree** — permanent bonuses (often entered from the same building)  
+1. **Item shop** — hay and raising / combat items  
+2. **Shed expansion** — more slots  
+3. **Star-up / shard crafting** — strengthen Normal cattle or craft new ones  
+4. **Tech system** — research 9 permanent bonuses with IRT  
 
 ---
 
 ## Item shop
 
-- Spend **IRG** on forage types (consumables; burned when used)  
-- Spend **IRT** on growth items, combat helpers, scenes, skin-related goods, etc.  
-- Exact shelves follow the live game  
-
-### "Left" count on goods
-
-The **Left N** next to an item is the server-wide shelf stock, not your personal purchase quota:
-
-| Goods | Restock |
-|---|---|
-| EXP Cards (Normal / Prime / Supreme), STR Batteries (Normal / Prime / Supreme), HP Potions (Normal / Prime / Supreme) | **50 per day**, automatically refilled at **00:00 Beijing time (UTC+8)** every day |
-| Hay, Rename Card and other goods | Fixed stock; restocked by operations once sold out |
-
-- When Left is 0 the Buy button is greyed out; daily-limited goods become available again after the next 00:00 refresh  
-- A single purchase cannot exceed the current Left count  
-
-After buying, use items from the **backpack**.
-
----
-
-## Expand CowShed
-
-When you’re short on stalls, spend IRT here (or follow CowShed prompts here).  
-More stalls mean more cattle growing / fighting / milking at once, and also ranch XP. See [03](./03-cowshed-and-growth.md).
-
----
-
-## Star-up craft (Normal adult cattle)
-
-Only **Normal adult cattle** can star-up (Genesis have no star rank).
-
-| Star-up | Material cost (concept) | Effect (concept) |
+| Item | Price | Stock mode |
 |---|---|---|
-| 0 → 1 star | Consume 1 more Normal cattle as material | Stat boost |
-| 1 → 2 stars | Consume 2 more | Stat boost plus an overall multiplier |
-| 2 → 3 stars | Consume 3 more | Higher multiplier |
+| Hay / Prime Hay / Supreme Hay | 100 / 200 / 300 IRG | Fixed stock, restocked by ops |
+| EXP Card normal / prime / supreme | 100 / 200 / 300 IRT | Daily limit 50 |
+| STR Battery normal / prime / supreme | 100 / 200 / 300 IRT | Daily limit 50 |
+| HP Potion normal / prime / supreme | 4000 / 8000 / 12000 IRT | Daily limit 50 |
+| Rename Card | 300 IRT | Fixed stock |
 
-- Material cattle are burned  
-- Star-up also costs **IRT**  
-- Each star adds stat points; 2-star and 3-star also apply whole multipliers (e.g. ×1.2, ×1.5; cows get matching milk-stat treatment)  
+- "Left N" beside an item is server-wide stock, not your personal limit  
+- Daily-limited items refill at **00:00 Beijing time**; at 0 the button greys out until tomorrow  
+- A single purchase cannot exceed the remaining amount; use items from the **Backpack**  
 
-Confirm material cattle are expendable before you proceed.
-
-### Shard craft
-
-**Cattle shards ×10 → 1 Normal cattle** (in the craft UI).
+Pass cards, score protection, shuffle cards, power cards, breed cards, and shards are in the **guild shop** (see [08](./08-guild.md)).
 
 ---
 
-## Personal tech tree
+## Shed expansion
 
-Spend IRT to feed tech XP and raise 9 permanent bonuses (each usually 0–5 levels).
+2 slots to start, 16 max; 500 → 3200 IRT rising, each slot grants 50 – 180 farm EXP. Table in [03](./03-cowshed-and-growth.md).
 
-### Three tech branches (names as in-game)
+---
 
-**Breeding**
+## Star-up (Normal adults)
 
-- Lower breeding fees  
-- Shorten breeding CD  
+Only **Normal adults** can star up, 0 → 3 (Genesis has no stars; its stats already apply at 100%).
 
-**Milk**
+### Why
 
-- Raise milk yield  
-- Raise milk rate  
-- Lower milk-related vitality cost  
+Normal stats apply by star multiplier: **0★ 25% → 1★ 40% → 2★ 60% → 3★ 80%**. Milk and combat both use that number; one star is usually worth more than a new cattle.
 
-**Combat**
+### How
 
-- Opening HP bonus  
-- Attack bonus  
-- Defense bonus  
-- Lower combat energy cost  
+1. Pick a **target** in the shed (Normal, adult, below 3 stars)  
+2. Pick **material cattle** (Normal, adult, alive, yours — in shed or wallet)  
+3. Pay the IRT fee (adjustable) and confirm  
 
-### Upgrading and unlocks
+- Material cattle are **burned**; their **remaining lifespan** becomes the target's "star EXP"  
+- **30 days** of star EXP → 1★, another **45 days** → 2★, another **60 days** → 3★; surplus carries over, enough material can jump several stars at once  
+- Freshly adult cattle with long lifespans are the most "valuable" material; the UI warns about EXP overflow  
+- On star-up the target's **lifespan resets to full** (and at least 30 days) — a key way to extend Normal cattle  
 
-- Buy XP: convert IRT to XP points (e.g. every 100 IRT buys some XP — trust in-game)  
-- XP needed per level rises  
-- Tech nodes unlock in batches by **ranch level**: some stay locked until you’re high enough  
+Make sure the material cattle are expendable.
 
-Maxing a tech may trigger a server-wide announcement.
+### Shard crafting
+
+**10 cattle shards → 1 Normal calf** (random gender, base stats 4000 – 5000), on the crafting screen, no IRT fee.
+
+---
+
+## Tech system
+
+"Research" a node with IRT (1 IRT = 1 EXP); cumulative investment reaches tiers → level up, 0 – 5 per node:
+
+| Level | 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|---|
+| Cumulative IRT | 100 | 250 | 450 | 700 | 1000 |
+
+All 9 maxed = 9000 IRT. Maxing a node triggers a server-wide marquee and an achievement quest paying 10,000 IRG.
+
+### The nine nodes (names follow the game)
+
+| Branch | Node | Effect at levels 1 – 5 | Unlock farm level |
+|---|---|---|---|
+| Breeding | Thrifty | Breeding cost ×95% / 90% / 80% / 70% / **50%** | 2 |
+| Breeding | Rapid Recovery | Cooldown −3h / −7h / −12h / −18h / **−24h** | 4 |
+| Milk | Lactation Booster | Milk +2% / 5% / 9% / 14% / **20%** | 2 |
+| Milk | Milking Kit | Milk Rate +2% / 5% / 9% / 14% / **20%** | 4 |
+| Milk | Scientific Production | Staking energy cost −2% / 5% / 9% / 14% / **20%** | 6 |
+| Combat | Cardiotonic | Starting HP +1% / 2.5% / 4.5% / 7% / **10%** | 2 |
+| Combat | Modern Weapons | Starting Attack +1% / 2.5% / 4.5% / 7% / **10%** | 6 |
+| Combat | Iron Body | Starting Defense +1% / 2.5% / 4.5% / 7% / **10%** | 4 |
+| Combat | Efficiency | Energy per match −4% / 8% / 12% / 16% / **20%** | 4 |
+
+Nodes are locked until the farm level is reached ("Unlocks at ranch level N"). "One-click upgrade" invests in bulk.
 
 ---
 
 ## Suggested priorities
 
-| Main playstyle | Prioritize |
+| Main play | Order |
 |---|---|
-| Milk miner | Milk branch |
-| Arena competitor | Combat branch |
-| Full-time breeder | Breeding branch |
-| Balanced | First 1–2 nodes that fix your current bottleneck |
+| Milk miner | Lactation Booster → Milking Kit → Scientific Production |
+| Arena fighter | Modern Weapons / Cardiotonic → Iron Body → Efficiency |
+| Breeder | Thrifty (halves fees) → Rapid Recovery |
+| Balanced | The 1 – 2 nodes that hit your current bottleneck |
 
-Related: combat → [07](./07-arena.md); item details → [12](./12-backpack.md)
+Related: combat → [07](./07-arena.md); items → [12](./12-backpack.md)

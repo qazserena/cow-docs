@@ -1,84 +1,95 @@
 # 09 Guild Battle
 
-Guild Battle (GVG) is periodic guild-vs-guild combat: attack the enemy **Guardian**, heal your own, compete on contribution; winners take plunder rewards.
+Guild Battle (GVG) is a weekly showdown between Home guilds: attack the enemy **guardian**, heal your own, and after 30 minutes the guardian with more HP wins; the winner loots the loser's guild battle pool.
 
-## Schedule (trust in-game times)
+## Schedule (configurable by ops)
 
-Common weekly stages:
+One cycle per week in four phases:
 
-1. **Sign-up** — Leader registers  
-2. **Roster** — Leader picks fighters (cap applies, e.g. ≤50)  
-3. **Battle** — Members take turns attacking / healing  
-4. **Settlement** — Win/loss, points, plunder rewards  
+| Phase | What happens | Current beta config |
+|---|---|---|
+| **Sign-up** | Leader signs up in "Guild Events → Guild BOSS Battle" | Tuesday 00:00 – 23:00 |
+| **Roster** | After signing up until battle start, the leader picks fighters | Tuesday after sign-up → Wednesday 00:00 |
+| **Battle** | Members attack / heal for **30 minutes** | Wednesday 00:00 – 00:30 |
+| **Settlement** | Result and points settled immediately | At battle end |
 
-Battle windows have historically included settings like “Friday night” — **always follow the current guild battle config** (ops can set sign-up day, battle day, etc.).
+- Only **Home planets** can sign up; Frontier / Federation cannot (Federation members fight with the mother planet)  
+- Guilds that didn't sign up sit out; a signed-up guild with no opponent (bye) gets no result and no point change  
+- Exact times follow the countdown on the in-game "Guild Events" page  
 
 ---
 
-## Matchmaking (concept)
+## Matchmaking
 
-- Guilds enter zones by contribution / rank (e.g. TOP / MIDDLE / ENTRY)  
-- Random pairing within a zone  
-- Byes may count as draws; no sign-up may count as a loss  
+- Divisions by guild battle **points ranking**: **TOP** (1 – 10), **MIDDLE** (11 – 50), **ENTRY** (51+)  
+- Random pairing within a division; an odd guild out gets a bye  
+- Guild battle points use ELO: win up, loss down, draw unchanged; new guilds start at a default score  
+
+---
+
+## The guardian
+
+Each guild has one guardian: **HP 1,000,000, Attack 5000, Defense 5000**.
+
+- The leader can equip **Guardian Armor** (guild shop, 500 IRT) for **+20% defense** this period  
+- Guardian reduced to 0 HP → **immediate loss**, the enemy wins on the spot, with a server-wide "lethal blow" marquee  
+- If neither falls within 30 minutes → **more remaining HP wins**; equal is a draw  
 
 ---
 
 ## What you can do in battle
 
-| Action | Notes |
-|---|---|
-| **Attack enemy Guardian** | Deal damage; counts as damage contribution |
-| **Heal ally Guardian** | Cows can heal (Genesis cows usually heal more than Normal) |
-| Use buff items | e.g. Power Potion (temporary ATK / DEF / stamina) |
+Entry: your guild signed up, you are on the leader's roster, the battle phase is on. Bring a bull or a cow:
 
-Guardians may have passives like crit; leaders can equip **Guardian Armor** (defense-type boosts).
+| Fighter | Action | Contribution |
+|---|---|---|
+| **Bull** | Card battle against the enemy guardian; basic-attack damage goes straight to its HP | Damage dealt |
+| **Cow** | Heals your guardian on each action: Normal cow **+100**, Genesis cow **+500** | Healing done |
 
-Combat is still card-based (including spirit / mana), same as the Arena — see [07](./07-arena.md).
+- At most **10 cows** per guild healing at once; more get "team is full"  
+- Entering guild battle **costs no combat energy**; re-enter as often as you like  
+- Card rules (including Spirit) match the Arena, see [07](./07-arena.md); the guardian has innate crit, and crits trigger a server-wide marquee  
+- **Power Potion** (item 20006): for 24 h all your fielded cattle get ATK +4000 / DEF +3000 / STA +5000; stacking extends duration  
+- Skin bonuses apply too  
 
 ---
 
 ## Points and rankings
 
-- Guild points use ELO-like rules: wins add, losses subtract  
-- Common boards:  
-  - Guild battle points (longer-term)  
-  - Weekly damage  
-  - Weekly healing  
+| Board | Period | Notes |
+|---|---|---|
+| Guild battle points | Permanent | Guild strength; decides next division |
+| Guild battle damage | Weekly | Personal attack contribution, settled Monday 00:00 |
+| Guild battle healing | Weekly | Personal healing contribution, settled Monday 00:00 |
 
-Personal contribution affects plunder benefit tiers.
+Personal contribution (damage + healing) sets your tier for this period's **loot benefits**.
 
 ---
 
-## How plunder rewards are paid
+## How loot is paid
 
-1. Winners receive a tax-related reward amount from the opponent (settled by contract / server)  
-2. Leader completes the on-chain claim flow (often needs a signature)  
-3. Leader configures **plunder benefits** ratios in guild benefits and distributes  
-4. Members claim by rank tier  
+1. After settlement the winning **leader** claims in the guild events page: both guilds' battle pools for the period (30% of tax) merge into the winner's, wallet confirm  
+2. In "Guild Benefits → Loot", the leader decides how much goes to the member pool; **the rest goes to the leader's wallet**  
+3. The leader sets four tier ratios (contribution ranks 1 – 5 / 6 – 10 / 11 – 20 / 21 – 50) and distributes  
+4. Members claim by their rank tier (tax-free, to the Rewards Center) **before the next guild battle starts**  
 
-If you see “not victorious / no reward,” this week’s result doesn’t meet claim conditions.
+"Not victorious / nothing to claim" means this week's result doesn't qualify.
 
 ---
 
 ## Leader checklist
 
-- [ ] Sign up within the registration window  
-- [ ] Lock the fight roster  
-- [ ] Prep Guardian Armor and other guild items  
-- [ ] After settlement, claim and distribute plunder benefits promptly  
+- [ ] Sign up during Tuesday's window (upgrade a Frontier planet to Home first)  
+- [ ] Set the roster before battle; at most 10 cows healing at once  
+- [ ] Buy and equip Guardian Armor in advance  
+- [ ] After settlement: claim loot, set ratios, distribute  
 - [ ] Remind members to claim before expiry  
 
 ## Member checklist
 
-- [ ] Confirm you’re on the fight roster  
-- [ ] Be online in the battle window to attack / heal  
-- [ ] Use Power Potions when needed  
-- [ ] Claim plunder benefits after battle (if any)  
+- [ ] Confirm you are on the roster  
+- [ ] Be online during the battle window to attack / heal (no combat energy cost — go several rounds)  
+- [ ] Drink a Power Potion beforehand if needed  
+- [ ] Claim loot benefits afterwards (if any)  
 
----
-
-## Marquee notices
-
-Guild battle crits, last hits, etc. may trigger server-wide announcements.
-
-Related: guild daily life → [08](./08-guild.md); card combat basics → [07](./07-arena.md)
+Related: guild basics → [08](./08-guild.md); card combat → [07](./07-arena.md)

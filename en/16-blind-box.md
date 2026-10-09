@@ -111,7 +111,15 @@ You get a skin NFT to equip. Multiple common skins can craft an Ultimate skin �
 
 ## 5. UR chests
 
-Event N–UR Chests are **not** a loot roll: each box id pays a **fixed** set of items / badges / skins / IRT. No hidden second table. Trust the chest text and the payout.
+N–UR chests from the Ladders weekly ranking and events are **not** a loot roll: each chest pays a **fixed** set, all of it, with no hidden second table.
+
+| Chest | Contents | Source |
+|---|---|---|
+| **N** | EXP Card ×3, STR Battery ×3, 800 IRT | Events |
+| **R** | Prime EXP Card ×3, Prime Battery ×3, HP Potion ×1, 1200 IRT | Events |
+| **SR** | Prime EXP Card ×5, Prime Battery ×5, HP Potion ×1, 1500 IRT | Ladders ranks 11–50 |
+| **SSR** | Supreme EXP Card ×5, Supreme Battery ×5, Prime HP Potion ×1, 3500 IRT | Ladders ranks 4–10 |
+| **UR** | Supreme EXP Card ×9, Supreme Battery ×9, Supreme HP Potion ×1, 5000 IRT | Ladders ranks 1–3 |
 
 ---
 

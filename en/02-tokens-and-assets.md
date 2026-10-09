@@ -2,101 +2,126 @@
 
 ## Two game tokens
 
-| Token | Role |
+| Token | Use |
 |---|---|
-| **IRT** | Main token: breeding, star-up, tech, skins / some items, tax, milk and some combat rewards |
-| **IRG** | Game coin: earned from PVE and similar modes; spent (and burned) on forage and more |
+| **IRT** | Main token: breeding, star-up, tech, expansion, items / skins, entry fees, federation applications, tax, milk & combat rewards |
+| **IRG** | Game gold: main output of PVE win chests and quests; spent (and burned) on hay and breeding |
 
-Some portal events also use **USDT** (e.g. IGO box purchases, certain staking mines).
+During beta they are called **TIRT / TIRG** (test tokens) with identical rules. Some portal events use **USDT** (IGO boxes, Interstellar Mining, marketplace settlement).
 
 ### How to earn
 
-- **IRT**: Milk Factory output, some Arena rewards, quests / mail / events, market or DEX  
-- **IRG**: Arena (especially PVE), quests and events, swaps  
+| | IRT | IRG |
+|---|---|---|
+| In game | Milk Factory, Match win chest, on-chain PVP battle report, guild benefits, Ladders weekly chest, quests / mail | PVE win chest, quests (most common), chests |
+| Portal | Year-End Staking, airdrops, beta starter pack | Interstellar Mining (USDT staking), CattleMart FOMO pool, daily supply, airdrops |
+| Trading | "IRT Exchange / IRG Exchange" in the client balance bar → DEX | Same |
 
-The client usually has “Swap IRT / Swap IRG” shortcuts to a DEX.
+### Where it goes (common prices, current config)
 
-### How to spend
+| Spend on | Token | Amount |
+|---|---|---|
+| Hay normal / prime / supreme | IRG | 100 / 200 / 300 |
+| EXP card, STR battery normal / prime / supreme | IRT | 100 / 200 / 300 |
+| HP potion normal / prime / supreme | IRT | 4000 / 8000 / 12000 |
+| Rename card | IRT | 300 |
+| Shed expansion (slot 3 onward) | IRT | 500 → 3200 rising |
+| Breeding (1st – 5th time) | IRT + IRG | 100 – 500 IRT + 100k – 500k IRG |
+| Tech tree (one node to max) | IRT | 1000 |
+| Skins | IRT or USDT | 625 / 935 / 1250 USD-equivalent |
+| Guild entry fee | IRT | set by leader |
+| Federation planet application | IRT | 500 deposit + bid |
+| Frontier → Home upgrade | IRT | 500 USD-equivalent |
 
-- Feeding forage (mainly IRG)  
-- Breeding fees, star-up, tech tree, CowShed expansion (mainly IRT)  
-- Guild shop, skin shop, item shop  
-- Auto tax when claiming taxed rewards (see [08 Planets & Guilds](./08-guild.md))  
+Taxable income (milk, Match win chest, PVP report, rental income) is taxed automatically on claim — see [08](./08-guild.md).
 
 ---
 
 ## Cattle NFTs (the core asset)
 
-Every cattle is an on-chain NFT — the carrier for growth, milk, combat, and breeding.
+Every cattle is an on-chain NFT and the vehicle for raising, milk, combat, and breeding.
 
-### Bloodline: Genesis cattle vs Normal cattle
+### Bloodline: Genesis vs Normal
 
-| | Genesis cattle | Normal cattle |
+| | Genesis | Normal |
 |---|---|---|
-| How to get | Extremely rare from boxes, events, high market prices | Boxes, breeding, market (**calves only** can be listed), shard crafting |
-| Market listing | Yes | **Only non-adult calves can be listed**; adults cannot be sold, transfer still works |
-| Lifespan | Eternal (does not die from lifespan) | Has lifespan; dies and is burned when depleted |
-| Stars | No star rank | 0–3 stars, can star-up |
-| Stat range | Higher (about 86–100 tier) | Lower (about 60–85 tier; star-up can boost) |
-| Specials | Can use Genesis avatars, etc.; some life potions do not apply | Can use life potions; can craft from shards |
+| Source | 1-in-10,000 from boxes, IGO / CattleMart, beta pack, marketplace | 90% of boxes, breeding, 10 shards crafting, marketplace (calves only) |
+| Lifespan | **Eternal** | Finite; dies and burns when it runs out |
+| Stars | None, stats apply at **100%** | 0 – 3 stars, stats scaled by star multiplier (below) |
+| Base stats | 8000 – 12000 | Calves 4000 – 5000 (parents' average when bred); event / pack adults 6000 – 8000 |
+| Growth | Born adult | Must be fed to 30,000 growth |
+| Breeding | 5 times + unlimited via breed cards | 5 times max |
+| Transfer & trade | Free wallet transfer, always sellable | **No direct wallet transfer**; marketplace only, and **only calves can be listed** |
+| Life extension | Not needed, HP potions not allowed | HP potions, max +10 days total |
+| CowShed | Genesis bulls cannot leave for 24 h after entering | — |
 
-### Gender decides playstyle
+### Gender decides gameplay
 
-| Gender | Key stats | Main play |
+| Gender | Specific stats | Main play |
 |---|---|---|
-| **Bull** | Combat, stamina, defense, etc. | Arena fights, guild battle offense |
-| **Cow** | Milk yield, milk rate, etc. | Milk Factory staking, heal guardians in guild battle |
+| **Bull** | Attack, Stamina, Defense | Arena combat, guild battle attack, charging the energy station |
+| **Cow** | Milk, Milk Rate | Milk Factory staking, healing the guardian in guild battle |
 
-Shared stats also include: HP, vitality, growth, XP, and more.
+Shared stats: Life (lifespan length), Energy cap, Growth.
 
-### Cattle states (why a button is grayed out)
+### Star multiplier (must-read for Normal cattle)
 
-What a cattle can do depends on state. Common ones:
+A Normal cattle's displayed and effective stats are base × star multiplier:
 
-- Idle, in CowShed, staked, in combat, feeding, listed, dead  
+| Stars | 0 | 1 | 2 | 3 | Genesis |
+|---|---|---|---|---|---|
+| Multiplier | **25%** | 40% | 60% | 80% | 100% |
 
-Example: a staked cow must be redeemed before other actions; during a feeding countdown it usually cannot do other activities; dead cattle still occupy stalls until removed.
+A 0-star bull with base 4800 attack actually has 1200; at 3 stars, 3840. Star-up is the main way to make Normal cattle stronger — see [06](./06-academy.md).
 
-### Death and extending life
+### Lifespan
 
-- **Normal cattle** die and burn when lifespan runs out; use **Life Potion (HP pack)** early to extend life  
-- **Genesis cattle** do not die from lifespan, and generally do not use the HP-pack logic  
-- Cattle outside the shed keep draining vitality; long neglect risks death (see [03](./03-cowshed-and-growth.md))  
+- Normal lifespan = **35 days × Life ÷ 10000**: calves ≈ 14 – 17 days, pack adults ≈ 21 – 28 days  
+- HP potions add at most **10 days** total per cattle  
+- **Star-up resets lifespan to full** (and at least 30 days) — the other way to "extend life"  
+- When time runs out the cattle is dead; it still occupies a slot and is burned when removed from the shed  
+
+### Cattle states (why a button is greyed out)
+
+Idle, In Shed, Staking, In Battle, Feeding, Listed, Dead.
+
+- A staking cow must be redeemed before breeding / removal  
+- During the feeding countdown (10 – 20 min per hay) nothing else is possible  
+- After breeding: 3-day cooldown (tech can shorten)  
 
 ---
 
-## Blind box types
+## Boxes
 
-| Type | Typical drops | Common sources |
+| Type | Drops | Source |
 |---|---|---|
-| **Cattle blind box (embryo box)** | Genesis 0.01%, Normal calf 90%, shards 9.99% | Guaranteed from breeding; events |
-| **IGO Genesis box** | Genesis / Normal / item pack / skin pack (depleting pool) | Limited portal IGO (often needs USDT) |
-| **Skin blind box** | Five skins (30% / 30% / 15% / 15% / 10%) | Shops, limited guild shop, IGO skin pack |
-| **UR chests (N–UR Chest)** | Fixed item sets, not a loot roll | Events, drops |
-| **Cattle shard box** | A few shards (no separate backpack open) | Events, etc. |
+| **Cattle box (embryo)** | Normal calf 90%, shards 9.99% (4 – 5), Genesis 0.01% | Breeding; referral reward; beta pack |
+| **IGO Genesis box** | Genesis / Normal / item pack / skin pack (prize pool) | Portal IGO (USDT) |
+| **Skin box** | 5 skins (30 / 30 / 15 / 15 / 10%) | Shop, guild shop, IGO skin pack, vouchers |
+| **N – UR chests** | Fixed item bundle + IRT, not random | Ladders weekly ranking, events |
+| **Shard box** | A few shards | Events |
 
-Full counts and percentages: **[16 Blind box odds](./16-blind-box.md)**.
-
-**Cattle shards ×10** craft one Normal cattle (see [06 Academy](./06-academy.md)).
+Full counts and percentages: **[16 Blind Box Odds](./16-blind-box.md)**. **10 shards** craft one Normal cattle (see [06](./06-academy.md)).
 
 ---
 
-## Other common on-chain assets
+## Other on-chain assets
 
 | Asset | Notes |
 |---|---|
-| **Items (ERC1155)** | Forage, boost packs, potions, rename cards, clear tickets, etc. — see [12](./12-backpack.md) |
-| **Skins** | Change combat look and add stats |
-| **Badges** | Equip at the Milk Factory to boost milk hashrate |
-| **Planet NFT** | Core asset for guild leader identity and tax rights |
-| **Vouchers** | Portal redemption for forage / items, with thresholds |
+| **Items (ERC1155)** | Hay, EXP cards, batteries, HP potions, rename cards, pass cards… see [12](./12-backpack.md) |
+| **Skins (ERC721)** | Change combat look and add stats; craftable into the ultimate skin |
+| **Badges (ERC721)** | Equip at the Milk Factory for hashpower, Bronze → Master (6 tiers) |
+| **Planet NFT** | Home / Frontier / Federation; leadership and tax rights |
+| **Avatar NFT** | Issued automatically at birth / adulthood; switch avatar in profile |
+| **Voucher NFT** | Redeem at the portal Voucher Center for hay, items, skin boxes… |
 
 ---
 
-## Where to check tokens and assets
+## Where to look
 
-- In-game: balance bar, CowShed, backpack, profile stats  
-- Portal: NFT market, profile, event pages  
-- Wallet / explorer: contract balances and tx history  
+- In game: balance bar, CowShed, Backpack, Profile (cattle stats, cumulative IRT / IRG income)  
+- Portal: Card Package `/profile` (all NFTs with details), NFT Marketplace, event pages  
+- Wallet / explorer: contract balances and transaction history  
 
 Next: [03 CowShed & Growth](./03-cowshed-and-growth.md)

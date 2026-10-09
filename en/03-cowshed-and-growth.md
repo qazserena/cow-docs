@@ -1,130 +1,155 @@
 # 03 CowShed & Growth
 
-The CowShed is your ranch’s “home.” Almost all growth actions require cattle to be **in the shed**.
+The CowShed is home. Almost everything requires "the cattle is in the shed", and entering the shed requires a bound planet.
 
-## Stalls
+## Slots
 
-- You start with **2** stalls, expandable (current config up to about **16** — trust in-game)  
-- Expansion costs **IRT**; price rises with purchases (often about 500 → 700 → 1000 → … IRT)  
-- Expand from the **Academy** or CowShed-related UI  
+- Start with **2**, up to **16**  
+- Expand at the **Academy** with IRT; each price tier covers two purchases and grants farm EXP:
 
-Dead cattle may still occupy stalls — clear them promptly or new cattle won’t fit.
+| Slot bought | 3 – 4 | 5 – 6 | 7 – 8 | 9 – 10 | 11 – 12 | 13 – 14 | 15 – 16 |
+|---|---|---|---|---|---|---|---|
+| Price per slot (IRT) | 500 | 700 | 1000 | 1400 | 1900 | 2500 | 3200 |
+| Farm EXP per slot | +50 | +60 | +80 | +100 | +120 | +150 | +180 |
 
----
-
-## Why cattle must enter the shed
-
-Only cattle in the shed can reliably:
-
-- Grow and feed  
-- Breed  
-- Stake for milk  
-- Fight (adult bulls)  
-
-Cattle outside keep draining vitality; long neglect risks death (Normal cattle).
+Dead cattle still occupy slots — remove them (removal burns them) or new cattle won't fit.
 
 ---
 
-## Feeding (restore vitality)
+## Why the shed is mandatory
 
-1. Open the CowShed and select a cattle  
-2. Use forage: **Normal / Mid / High forage** (mainly costs IRG; consumed items are burned)  
-3. Enter a feeding state with a countdown; during feeding you usually cannot do other activities  
+Only in the shed can cattle: feed and grow, breed, stake for milk, fight, charge the energy station, be a star-up target.
 
-Vitality is used for: growth conversion, milk stake duration, combat energy–related spend, etc.  
-When vitality is low, many modes gray out or fail.
+- Genesis bulls cannot leave for **24 h** after entering  
+- Staking / fighting / feeding cattle cannot be removed  
 
 ---
 
-## Calves growing into adults
+## Feeding (energy)
 
-- Calves convert vitality into **growth points**  
-- Reach the growth target (commonly 30000) to become adult  
-- Daily growth from vitality has a cap (commonly about 10000 / day)  
-- At a normal pace, adulthood takes several days; use **Growth Boost packs**:  
-  - Growth Pack 1 / 2: add growth points  
-  - Growth Pack 3: can mature instantly (see in-game text)  
+1. Open the CowShed and pick a cattle  
+2. Use hay (bought with IRG at the Academy / guild shop; burned on use)  
 
-After adulthood:
+| Hay | Energy | Feeding time | Price |
+|---|---|---|---|
+| Hay | +120 | 10 min each | 100 IRG |
+| Prime Hay | +200 | 15 min each | 200 IRG |
+| Supreme Hay | +280 | 20 min each | 300 IRG |
 
-- **Cows** → can enter the Milk Factory  
-- **Bulls** → can enter the Arena  
-- **Normal adult cattle can no longer be listed** on the NFT market (Genesis cattle are unrestricted); sell before adulthood if you need to trade — see [13](./13-market.md)  
+- Feeding several at once adds up the time; **the cattle can do nothing else while feeding**  
+- Energy cannot exceed the cattle's Energy cap (Normal calves 4000 – 5000, Genesis 8000 – 12000)  
+- STR batteries (items) add energy instantly with no feeding time: +500 / +1000 / +1500  
+
+Energy is used for: milk staking duration (1 energy = 60 s), breeding (1000 per cattle), charging the energy station with a bull.
 
 ---
 
-## Farm / personal ranch level (1–6)
+## Calf → adult
 
-In the profile UI this shows as **Farm XP**; portal quests often say **farm / ranch level** — same system.  
-There is **no separate “Upgrade” button**: when XP fills the current tier, the level rises **automatically** on-chain.
+- **When a calf eats hay, the energy converts straight into growth** (no energy gained); you can also convert existing energy to growth 1:1 in the shed  
+- Hay / energy can add at most **15,000** growth per cattle per day (resets 00:00 Beijing time)  
+- Adult at **30,000** growth — 2 days at the fastest  
+- **EXP cards** ignore the daily cap: +500 / +1000 / +1500 (adults cannot use them)  
+- Genesis cattle are born adult  
 
-### What leveling up does
+Once adult:
 
-| Display level | Milk reward multiplier (approx.) | Combat score bonus (approx.) |
-|---|---|---|
-| 1 | ×1.00 | ×1.00 |
-| 2 | ×1.05 | ×1.10 |
-| 3 | ×1.10 | ×1.15 |
-| 4 | ×1.15 | ×1.20 |
-| 5 | ×1.20 | ×1.25 |
-| 6 | ×1.30 | ×1.40 |
+- **Cows** → Milk Factory, breeding  
+- **Bulls** → Arena, breeding, charging the energy station  
+- **Normal adults can no longer be listed on the NFT marketplace** (Genesis unaffected); trade before adulthood — see [13](./13-market.md)  
+- A calf avatar NFT is issued at birth; finishing the last growth step with an EXP card also issues an adult avatar NFT (switch in profile)  
 
-Also unlocks personal tech nodes in batches; portal invite / voucher activities often require **farm level ≥ 2**.
+---
 
-### Where to check level & XP
+## Lifespan & extension
 
-Open **Profile** (avatar) → **Farm XP** bar (current / needed for next level).
+- Normal lifespan = 35 days × Life ÷ 10000 (≈ 14 – 28 days); the shed shows a death countdown  
+- **HP potions**: +2 / +5 / +10 days; **max +10 days total per cattle**  
+- Star-up resets lifespan to full (see [06](./06-academy.md))  
+- Genesis cattle are eternal and cannot use HP potions  
 
-### Where upgrade XP comes from
+---
 
-| Action | XP |
+## Energy station (bull combat energy)
+
+Every Arena match costs **300 combat energy**, prepared at the Arena's "Cattle Energy Station":
+
+| Method | Notes |
 |---|---|
-| Each stall expansion (from the 3rd stall on) | +50 / +60 / +80 / +100 / +120 / +150 / +180 (rises by tier; each tier covers two purchases) |
-| Each successful breeding (get a box) | +20 |
+| Inject cattle energy | Pick a shed **bull** and convert its energy into combat energy, up to 20,000 per operation |
+| Use an item directly | Inject with STR batteries, no cattle involved |
+
+- Pool cap **20,000** (about 66 matches)  
+- The pool is account-wide; any bull can use it  
+- Combat tech "Efficiency" cuts the per-match cost (up to −20%)  
+
+Combat energy, cattle energy, and in-match Spirit are three different resources (see [07](./07-arena.md)).
+
+---
+
+## Farm level / Ranch level (1 – 6)
+
+The profile shows it as **"Farm EXP"**; portal quests and voucher rules call it **"farm level / ranch level"** — same thing.  
+**There is no "level up" button**: when EXP fills the current tier it levels up on-chain automatically.
+
+### What it does
+
+| Level | Milk multiplier | Combat win multiplier | Unlocks tech |
+|---|---|---|---|
+| 1 | ×1.00 | ×1.00 | — |
+| 2 | ×1.05 | ×1.10 | Lactation Booster, Thrifty, Cardiotonic |
+| 3 | ×1.10 | ×1.15 | — |
+| 4 | ×1.15 | ×1.20 | Milking Kit, Rapid Recovery, Iron Body, Efficiency |
+| 5 | ×1.20 | ×1.25 | — |
+| 6 | ×1.30 | ×1.40 | Scientific Production, Modern Weapons |
+
+Achievement quests "reach ranch level 2 – 6" each pay IRG and items (see [11](./11-daily.md)).
+
+### Where to see it
+
+**Profile** (tap your avatar) → **Farm EXP** bar (current / required).
+
+### Where EXP comes from
+
+| Action | EXP |
+|---|---|
+| Each shed expansion | +50 – +180 (table above) |
+| Each successful breeding | +20 |
 | Each calf raised to adult | +20 |
-| Growth Boost pack (N / M / H) | +3 / +5 / +9 each |
-| Vitality pack (N / M / H) | +3 / +5 / +9 each |
-| Life Potion (N / M / H) | +7 / +20 / +38 each |
+| EXP card normal / prime / supreme | +3 / +5 / +9 each |
+| STR battery normal / prime / supreme | +3 / +5 / +9 each (also when injected at the energy station) |
+| HP potion normal / prime / supreme | +7 / +20 / +38 each |
 
-Feeding forage alone does **not** grant farm XP; maturing a calf with a growth pack still grants the adult +20.
+Hay itself gives no farm EXP; an EXP card that finishes adulthood also grants the "+20 adult" bonus.
 
-### XP needed per level
+### EXP per level
 
-| Step | XP needed |
+| Level up | EXP needed |
 |---|---|
 | 1 → 2 | 200 |
 | 2 → 3 | 300 |
 | 3 → 4 | 450 |
 | 4 → 5 | 675 |
 | 5 → 6 | 1350 |
-| Already Lv 6 | XP still accumulates; no further tier |
+| Max 6 | EXP still accumulates, no further tiers |
 
-### Fast path to level 2 (common portal gate)
+### Fastest way to level 2
 
-Any mix that reaches **200** XP auto-levels you, for example:
+Any combination reaching **200**, e.g.:
 
-1. **Expand stalls** a few times (+50–+60 early), then breed or raise calves  
-2. **Breed** about **10** successful matings (10 × 20)  
-3. **Raise** about **10** calves to adult  
-4. **Items** — vitality / growth / life potions to fill the gap  
+1. **Expansion**: slots 3 and 4 give +50 each, slots 5 and 6 +60 each → 220  
+2. **Consumables**: the starter pack's 9 EXP cards / 9 batteries / 3 potions add up to about +120  
+3. **Breeding / raising**: +20 each  
 
-Expand at the **Academy**; breed at the **Breeding Institute**; raise and use items in the **CowShed**.
-
-### What else level unlocks
-
-The personal tech tree unlocks in batches by ranch level: some nodes early, more mid-game, all at high level. See [06 Academy](./06-academy.md).
+Expansion at the **Academy**; breeding at the **Breeding Institute**; raising and consumables in the **CowShed**.
 
 ---
 
-## Daily growth tips
+## Daily routine
 
-1. Keep enough stalls — don’t leave cattle “outside”  
-2. Prioritize calves to adulthood, then split into milk / combat  
-3. Watch Normal cattle lifespan; use Life Potion in time  
-4. While doing quests and check-in, knock out “feed / mature / expand” goals  
+1. Keep enough slots; never leave cattle "outside"  
+2. Max out calves' 15,000 daily growth; split adults between milk and combat  
+3. Watch Normal cattle's death countdown; if potions are short, star-up resets lifespan  
+4. Fold "feed / adult / expand" quest goals into your routine  
 
-Related play:
-
-- Milk → [04 Milk Factory](./04-milk-factory.md)  
-- Breeding → [05 Breeding Institute](./05-breeding.md)  
-- Star-up & shard craft → [06 Academy](./06-academy.md)
+Related: milk → [04](./04-milk-factory.md); breeding → [05](./05-breeding.md); star-up → [06](./06-academy.md)

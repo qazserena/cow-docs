@@ -1,229 +1,199 @@
 # 07 Arena
 
-The Arena is the combat hub for **adult bulls**: turn-based card battles across PVE, Match, and Ladders, earning **IRG / IRT**, points, and chest rewards.
+The Arena is the combat hub for **adult bulls**: turn-based card battles across PVE, Match (PVP), and Ladders, earning **IRG / IRT**, rating points, and chests.
 
 ## Before you fight
 
-1. An adult **bull** in the shed, in a usable state  
-2. Enough **combat energy** (charge at the energy station with vitality or vitality packs; energy pool has a cap)  
-3. Daily entries for that mode not used up  
-4. Optional: wear skins; bring Clear Tickets / Power Cards / Point Protection Cards, etc.  
+1. An adult **bull** in the shed, alive  
+2. Enough **combat energy**: **300** per match, charged at the "Cattle Energy Station" with bull energy or STR batteries; pool cap 20,000 (see [03](./03-cowshed-and-growth.md))  
+3. Valid matches left today (each mode counts **20** per day for rewards)  
+4. Optional: wear a skin (adds attack / defense / stamina), bring pass / power / score-protection cards  
+
+Skin stats, PVE power card, and combat tech are applied on entry. A Normal bull's stats already include the star multiplier (0★ = 25%), see [02](./02-tokens-and-assets.md).
 
 ---
 
 ## Three modes
 
-### 1) PVE (campaign)
+### 1) PVE (BOSS floors)
 
-- Challenge bosses / climb stages  
-- Use **Clear Tickets** to sweep (daily limits apply)  
-- Mainly produces game coin and win progress  
+- **20 floors**, cleared in order; you alone vs a floor monster, you always go first  
+- Monsters scale with floor: floor 1 ATK 1000 / DEF 100 / HP 1500 → floor 10 ATK 2300 / DEF 640 / HP 3750 → floor 20 ATK 13000 / DEF 8000 / HP 14000  
+- Wins count toward PVE daily wins; **Pass cards** add +1 win directly (2 effective per day)  
+- Reward: next day's PVE **win chest (IRG)**  
 
 ### 2) Match (PVP)
 
-- Supports 1v1, 3v3, 5v5  
-- Invite friends or guild chat to party up  
-- Match timeout may fill with bots  
+- 1v1, 3v3, 5v5; invite friends or your guild channel  
+- No opponent within 15 s → bots fill in  
+- Reward: next day's Match **win chest (IRT)**; 10 wins today lets you submit an on-chain **PVP battle report**  
 
 ### 3) Ladders
 
-- Usually 5v5  
-- ELO-style rating, weekly boards and rewards  
-- Use **Point Protection Cards** to avoid losses (per item text)  
+- 5v5, ELO rating, starts at **1000**; you appear on the board at **≥ 1100**  
+- Weekly board settles **Monday 00:00**: ranks 1 – 3 get a **UR chest**, 4 – 10 **SSR**, 11 – 50 **SR** (contents in [16](./16-blind-box.md)); the board resets, personal rating is kept  
+- **Score Protection cards** prevent losing points  
 
 ---
 
-## How combat works (rules overview)
+## How battles work (overview)
 
-- **Turn-based cards**: dice or similar decide first move  
-- Cards split into combat / defense / magic types (many idiom-named cards)  
-- **Spirit (mana)**: in-match resource for playing cards — see the next section; do not confuse it with pre-match **combat energy** or CowShed **vitality**  
-- Hand size is capped; at most **2** cards per turn, and they cannot share the same type  
-- Buffs include crit, lifesteal, reflect, invuln, seal, stun, and more  
-- Supports surrender votes and reconnect; if everyone is disconnected for too long, the match may end  
+- **Turn-based cards**: dice decide who goes first  
+- Three card types — Combat / Defense / Magic — 21 cards, cost 1 – 6 (full effects in [Appendix · Card Compendium](./appendix/cards.md))  
+- **Spirit (blue bar)**: the in-match card resource, next section; do not confuse with pre-match **combat energy** or shed **cattle energy**  
+- Hand cap 6; at most **2** cards per turn, never two of the same type  
+- Buffs include crit, lifesteal, reflect, invincibility, seal, stun, bleed, poison…  
+- Surrender votes and reconnection are supported; a match ends if everyone disconnects too long  
 
-For card details, open the in-arena **card codex**.
+The in-Arena **Card Compendium** has every card.
 
 ---
 
-## Spirit (in-match mana)
+## Spirit (the blue bar)
 
-Every card has a cost. If your remaining spirit is below that cost, you see **“Not enough spirit”** and the card will not play. That is the rule, not a bug.
+Every card has a cost. If your Spirit is below it you get **"Not enough Spirit"** and the card won't play. That is the rule, not a bug.
 
 | Rule | Detail |
 |---|---|
 | Start | **3 / 3** |
-| Start of your turn | Cap **+1**, then **refill** to the new cap |
-| Cap | Max **8** |
-| Spend | Playing a card deducts its cost (typically 1–6) |
-| Recover | **No potions and no energy station refill spirit.** Wait for your next turn |
-| No carry-over | Unused points this turn do not stack; next turn still fills to the current cap |
+| Start of your turn | cap **+1**, then **refill** to the new cap |
+| Cap | **8** |
+| Spent | per card cost (1 – 6) |
+| Restored | **No potion or station refills Spirit.** Only your next turn |
+| No banking | Unspent points don't carry; next turn you still refill to cap |
 
-How it differs from other resources:
+The three resources:
 
-- **Vitality**: CowShed feeding — used for growth / milk / charging the energy station  
-- **Combat energy**: charged at the energy station **before** a match; without it you cannot enter the Arena  
-- **Spirit**: used **inside** a match to play cards  
+- **Cattle energy**: fed in the shed; for raising / milk / charging the station  
+- **Combat energy**: prepared at the station, 300 per match, no entry without it  
+- **Spirit**: used in the match to play cards  
 
-Tips: with only 3–4 spirit in the first turns, play 1–2 cost cards; save 4-cost and 6-cost cards until the cap grows. If you already played one card this turn and cannot afford the next, switch to a cheaper card or end the turn.
+Tip: with 3 – 4 Spirit early, play 1 – 2 cost cards; save 4- and 6-cost cards for later turns.
 
 ---
 
-## How a PK match plays out (server rules)
+## A full PK, step by step (server rules)
 
-Every Arena mode shares one turn-based engine. Flow: match → enter → guess first → play cards / attack → resolve.
+All modes share one engine. Below: matchmaking → placement → coin toss → cards and attacks → result.
 
-### 1. Before the fight
+### 1. Finding an opponent
 
-- An adult **bull** with valid on-chain combat stats (ATK / STA / DEF), not dead  
-- Enough **combat energy**: current entry cost is **300** per mode (template can change)  
-- Cattle selected; party modes also need a full roster  
-
-Not enough energy blocks entry (separate from in-match spirit). PVE Power Cards and equipped skins apply as you enter.
-
-### 2. How you get an opponent
-
-| Mode | Size | Pairing |
+| Mode | Players | Rule |
 |---|---|---|
-| **PVE campaign** | You vs the stage monster | No human match. You always go first |
-| **Match 1v1** | 2 players | Another 1v1 team that already tapped Start. **Normal cattle only fight adjacent star grades** (0★ vs 0–1, 1★ vs 0–2, 2★ vs 1–3, 3★ vs 2–3). **Genesis only fights Genesis** |
-| **Match 3v3 / 5v5** | 6 / 10 | Both sides must be full. Positions shuffle on enter |
-| **Ladders** | Up to 5 per side, fill 5v5 | Ready parties are packed into red/blue by size (largest first) until each side has 5 |
+| **PVE** | you vs a floor monster | Monster from the floor table, no humans; you go first |
+| **Match 1v1** | 2 | Another 1v1 team that pressed Start. **Only adjacent star tiers for Normal cattle** (0★ vs 0 – 1, 1★ vs 0 – 2, 2★ vs 1 – 3, 3★ vs 2 – 3); **Genesis only fights Genesis** |
+| **Match 3v3 / 5v5** | 6 / 10 | Both sides must be full; positions are shuffled on entry |
+| **Ladders** | up to 5 per side, filled to 5v5 | Ready squads are packed into red / blue by size, largest first, until both sides have 5 |
 
-If Match finds no valid opponent for **15 seconds**:
+If no opponent after **15 s** in Match:
 
-- **1v1**: fight a bot (each of your three stats minus about 200–500; counted as Match 1v1)  
-- **3v3 / 5v5**: fill the other side with bots; Normal bots ~5000±2000, Genesis ~10000±2000  
+- **1v1**: a bot (your bull's three stats minus 200 – 500 each; still counts as a solo match)  
+- **3v3 / 5v5**: bots fill the other side; Normal bots ≈ 5000±2000 per stat, Genesis ≈ 10000±2000  
 
-Ladders do **not** fill with bots — they keep waiting.
+Ladders never add bots — it keeps waiting.
 
-Party: leader creates, picks cattle, invites / guild-chat join, then Start. Leader leaving dismisses the party; a kick or leave cancels matching.
+Teams: the captain creates the team, picks cattle, invites via friends or guild channel, starts when full. Captain leaving disbands the team; kicked or leaving players cancel matchmaking.
 
-### 3. Positions
+### 2. Placement
 
-| Mode | Layout |
+| Mode | Positions |
 |---|---|
-| PVE, 1v1 (including bots) | One cattle each, back-middle |
-| 3v3, Ladders | Back row top / mid / bottom |
+| PVE, 1v1 (incl. bots) | 1 each, back-center |
+| 3v3, Ladders | back row top / middle / bottom |
 | 5v5 | 2 front + 3 back |
 
-A side wins when the other side has no living cattle (section 6).
+### 3. Toss, deal, turns
 
-### 4. Guess, deal, turns
+1. After both load and ready, **toss**: Match / Ladders roll random numbers, higher goes first; PVE you go first  
+2. Each player shuffles a full deck and draws **3**  
+3. **When a cattle acts**: draw (usually 2), hand cap **6**; an empty deck reshuffles all cards  
+4. ~**20 s** to play, ~**8 s** for animations; timeouts are skipped by the server  
+5. After its cards resolve the cattle makes **one basic attack**  
+6. When all living cattle on a side have acted, the other side's turn begins  
 
-1. After load + ready, **guess first**: Match / Ladders roll red vs blue (higher goes first). PVE: you always first.  
-2. Each player shuffles a full deck and is dealt **3** cards.  
-3. The first side acts on turn 1. Spirit rules: previous section.  
-4. **When a cattle acts**: extra cards (usually 2), hand cap **6**; empty pile reshuffles the full set.  
-5. Play timeout ~**20 s**, action timeout ~**8 s**; server auto-skips.  
-6. After chosen cards resolve, the cattle makes **one basic attack** (cows heal the Guardian in guild battle; Arena uses bulls, so this is an attack).  
-7. After every living ally has acted, the other side’s turn starts.
+Illegal plays are rejected: cost above current Spirit; more than 2 cards; two of the same type; a sealed type. Bots play 0 – 2 random cards after 2.5 – 7 s.
 
-Illegal plays are rejected:
+### 4. Damage
 
-- Cost above current spirit  
-- More than **2** cards in one turn  
-- Two cards of the **same type** in one turn  
-- Sealed types  
+Basic attack (rounded down):
 
-Bots wait ~2.5–7 s then randomly play 0–2 cards.
+**Damage = (0.5 × ATK)² ÷ (ATK + DEF) × 0.8**
 
-### 5. Damage
+ATK / DEF include this turn's cards and buffs. Common modifiers:
 
-Basic attack (floored):
+- **Ignore defense** (X-Ray): about ATK ÷ 2  
+- **Crit**: by the card's crit rate, then crit multiplier  
+- **Damage bonus / splash / lifesteal / reflect / shield / invincible**: by buff  
+- **Death Contract**: at the start of your turn with very low HP, ~10% to trigger  
+- **Lucy Mode**: after 10 cumulative Spirit spent this match, ~10% to trigger once, big defense boost  
 
-**damage = ((0.5 × ATK)² / (ATK + DEF) × 0.8)**
+### 5. Win, surrender, disconnect
 
-ATK/DEF include this turn’s cards and buffs. Common modifiers:
+Checked after every action: enemy all down → win; your side all down → loss; both at once → **draw**; surrender vote passes → loss.
 
-- **Ignore DEF** ≈ ATK / 2  
-- **Crit** from card rate, then crit-ratio extra  
-- **Damage amp / splash / lifesteal / reflect** from buffs  
-- **Invulnerable** blocks HP loss  
+Surrender: in 1v1 your own click is enough; larger modes need enough team votes.
 
-Also:
+Disconnects: **everyone** gone ~60 s → match force-ends; **some** gone ~30 s → server auto-advances turns; PVE / bot matches treat disconnect as surrender; Match / Ladders support reconnect.
 
-- **Death Contract**: small chance (~10%) at turn start if HP is very low  
-- **Lucy / overdrive**: after **10** spirit spent this match, small one-time chance (~10%) to greatly raise DEF  
+### 6. Ladders rating
 
-Card text in the codex wins for specifics.
-
-### 6. Win, surrender, disconnect
-
-After each cattle acts:
-
-- Enemy all down → you win  
-- You all down → you lose  
-- Both sides empty → **draw**  
-- Surrender vote passes → you lose, they win  
-
-1v1: your surrender succeeds immediately. Larger modes need enough yes votes on your team; too many nos fail the vote.
-
-Disconnect:
-
-- **Everyone** gone ~**60 s** → match force-ends  
-- **Some** gone ~**30 s** → server forces the next step  
-- PVE / vs-bot disconnect counts as surrender  
-- Match / Ladders can reconnect and resync board + hand  
-
-### 7. Ladder rating
-
-ELO vs the enemy **average** rating. Win scores 1.15, loss 0. K is 40 below 1800, 36.67 through 2400, 20 above.  
-
-**Draws**, or **20** valid Ladder games already today → rating unchanged.  
-**Point Protection Card** plus a loss → stay at pre-match rating. Floor is 0.
-
-### 8. Win chests
-
-Daily wins snap to tiers: under 10 → 0, 10–14 → 10, 15–19 → 15, 20+ → 20, then × ranch cattle-rate.  
-
-Match 3v3 / 5v5 can get a party multiplier (~1.1, or ~1.2 if those wins are all 5v5). Playing with an **intimate friend** adds more — see [10](./10-social.md).  
-
-PVE Clear Tickets: up to **2**/day. PVE Power Cards: **2**/day. Point Protection: **1**/day.
+ELO against the enemy's average rating. Win = 1.15, loss = 0. K: 40 below 1800, 36.67 for 1800 – 2400, 20 above.  
+**Draw**, or 20 valid matches already today → rating unchanged. A **Score Protection card** keeps the pre-match rating when you would drop. Floor 0.
 
 ---
 
-## Rewards and daily limits
+## From wins to rewards
 
-- Each mode has a daily match cap (e.g. separate PVP / PVE / Ladder counts; adjustable)  
-- **Win chests**: claim at daily win tiers such as 10 / 15 / 20; higher tiers have reward multipliers  
-- Qualifying PVP battle reports can be **claimed on-chain** (wallet confirm; may involve a Banker signature flow)  
-- Claiming IRT-type rewards may also trigger planet tax  
+### Valid wins and multipliers
 
-Party bonus examples (trust in-game):
+- Daily wins are tiered: **10 – 14 counts as 10, 15 – 19 as 15, 20+ as 20**; under 10 counts nothing  
+- × the farm level **combat multiplier** (1.00 – 1.40, see [03](./03-cowshed-and-growth.md))  
+- Match team bonus: ≥ 80% of today's valid wins from 3v3 / 5v5 → **×1.1**; if all of those are 5v5 → **×1.2**  
+- Wins with a **bonded friend** on your team add **20%** pro rata (see [10](./10-social.md))  
 
-- High-winrate five-stacks may get extra multipliers  
-- Intimate friends in a party may get reward bonuses (see [10](./10-social.md))  
+### Win chests (in game, next day)
 
----
+The Arena "Win Chest" settles **yesterday's** data, one per tab (Match and PVE):
 
-## Helper items at a glance
+> Your chest = day pool × (your weighted wins ÷ server-wide weighted wins)
 
-| Item | Effect |
-|---|---|
-| Clear Ticket | PVE +1 win progress / sweep related; daily limits |
-| Point Protection Card | Ladder losses don’t drop rating |
-| PVE Power Card | Temporary 3-stat boost |
-| Shuffle Card, etc. | Per item text |
+- Match chest pays **IRT**, PVE chest pays **IRG** (pool sizes set by ops)  
+- Goes to the **Rewards Center** (the Match chest is taxable); cannot claim while the Rewards Center has a pending order  
 
-Guild shops often sell some combat items.
+### PVP battle report (on-chain pool)
+
+After **10 Match wins** today you can submit a battle report in the Arena (wallet confirm, server-signed):
+
+- The contract has a **10,000 IRT** daily report pool, split by "your weighted wins ÷ all weighted wins submitted that day"  
+- Submit today, claim that day's share **from the next day**; planet tax applies on claim  
+- Max 20 wins per day per player; repeated submissions only add the increment  
+
+### Daily card limits (server-side)
+
+| Item | Effective per day | Effect |
+|---|---|---|
+| Pass Card | 2 | PVE win +1 |
+| PVE Power Card | 3 | +10% to all three stats in PVE (no stacking) |
+| Score Protection | 2 | Keep rating when a Ladders match would drop it |
+
+Cards beyond the limit are consumed with no effect. Buy them in the **guild shop** (200 IRT each).
 
 ---
 
 ## Leaderboards
 
-- Ladder **weekly board** (periodic settlement and rewards)  
-- Related ranks under Arena “Points Ranking,” etc.  
+- Arena "Ranking": Ladders weekly board (≥ 1100 to appear), settled Monday 00:00 with chests  
+- Portal `/social/leaderboards`: this week / last week / all-time  
 
 Guild battle boards: [09](./09-guild-battle.md).
 
 ---
 
-## Newbie combat tips
+## Tips for new fighters
 
-1. Start with PVE to learn cards and pacing; early turns have little spirit, so play cheap cards first  
-2. Keep combat energy topped at the energy station — avoid “cattle but no energy” (that is not in-match spirit)  
-3. Clear win-chest tiers every day  
-4. Push Ladders once you have a stable lineup  
+1. Start with PVE to learn cards and tempo; play cheap cards early  
+2. Keep the energy station full — "has bull, no energy" is the classic mistake (not the same as Spirit)  
+3. Hit the 10 / 15 / 20 tiers daily and claim both chests the next day  
+4. 0-star Normal bulls are very weak; star up before pushing Ladders  
 
-Guild-side combat → [09 Guild Battle](./09-guild-battle.md)
+Guild combat → [09 Guild Battle](./09-guild-battle.md)

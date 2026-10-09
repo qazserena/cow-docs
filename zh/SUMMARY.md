@@ -29,15 +29,18 @@
 ## 交易与门户
 
 * [13 NFT 交易市场](13-market.md)
-* [14 门户官网活动](14-portal.md)
+* [14 门户官网](14-portal.md)
 
 ## 帮助
 
 * [15 常见问题 FAQ](15-faq.md)
 * [16 盲盒能开什么 · 开奖几率](16-blind-box.md)
+* [17 公测指南 · 礼包 · 邀请积分 · 空投](17-beta.md)
 
 ## 附录
 
 * [附录索引](appendix/README.md)
   * [道具清单](appendix/items.md)
+  * [卡牌图鉴](appendix/cards.md)
+  * [数值速查](appendix/numbers.md)
   * [术语对照](appendix/terminology.md)

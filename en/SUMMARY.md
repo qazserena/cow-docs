@@ -29,15 +29,18 @@
 ## Trading & Portal
 
 * [13 NFT Marketplace](13-market.md)
-* [14 Portal Events](14-portal.md)
+* [14 Portal](14-portal.md)
 
 ## Help
 
 * [15 FAQ](15-faq.md)
 * [16 Blind boxes — drops and odds](16-blind-box.md)
+* [17 Open Beta Guide · Packs · Invite Points · Airdrop](17-beta.md)
 
 ## Appendix
 
 * [Appendix Index](appendix/README.md)
   * [Item List](appendix/items.md)
-  * [Terminology](appendix/terminology.md)
+  * [Card Compendium](appendix/cards.md)
+  * [Numbers Cheat Sheet](appendix/numbers.md)
+  * [Glossary](appendix/terminology.md)
