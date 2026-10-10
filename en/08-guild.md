@@ -1,6 +1,6 @@
 # 08 Planets & Guilds
 
-In Legend Ranch, **planet ≈ guild**. After you bind a planet, tax, benefits, and guild battles all revolve around it.
+In Interstellar Rangeland, **planet ≈ guild**. After you bind a planet, tax, benefits, and guild battles all revolve around it.
 
 > Important: **you cannot change planets by yourself after binding**. The only exits are being kicked by the leader / vice leader, or founding your own guild with a planet card. Choose carefully.
 

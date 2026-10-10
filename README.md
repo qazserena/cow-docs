@@ -1,4 +1,4 @@
-# Legend Ranch · Player Handbook / 传奇牧场 · 玩家手册
+# Interstellar Rangeland · Player Handbook / 传奇牧场 · 玩家手册
 
 | Language | Guide |
 |---|---|

@@ -1,6 +1,6 @@
 # Summary
 
-* [Legend Ranch · Player Handbook](README.md)
+* [Interstellar Rangeland · Player Handbook](README.md)
 
 ## Getting Started
 

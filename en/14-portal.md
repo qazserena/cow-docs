@@ -14,7 +14,7 @@ The portal (cowgalaxy.com) complements the game client: **marketplace, events, m
 | | Interstellar Mining `/farm/interstellarmining` | Stake USDT to mine IRG |
 | | Guild Advancement Program `/guild` | Build a community for USDT rewards and badge NFTs |
 | | IGO `/IGO` | Genesis box sale |
-| **Games** | Legend Ranch `/rangeland` | Game intro and entry, tutorial video, leaderboards |
+| **Games** | Interstellar Rangeland `/rangeland` | Game intro and entry, tutorial video, leaderboards |
 | | Interstellar Sandbox `/sandbox`, Interstellar Trek `/trek` | Plans for the next two CowGalaxy games — **not live yet** |
 | **NFT** | Voucher Center `/voucherCenter` | Redeem vouchers for hay, items, skin boxes… |
 | | CattleMart Event `/CattleMart` | Halo chests, shard merging, FOMO pool |

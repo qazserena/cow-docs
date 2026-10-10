@@ -2,7 +2,7 @@
 
 | 术语 | 含义 |
 |---|---|
-| 传奇牧场 / Legend Ranch | 本游戏名称 |
+| 传奇牧场 / Interstellar Rangeland | 本游戏名称（英文名 Interstellar Rangeland），牛宇宙 CowGalaxy 的第一款游戏 |
 | 牛宇宙 / CowGalaxy | 游戏世界观所属宇宙，门户与论坛的品牌名 |
 | IRT / TIRT | 主代币；T 前缀为公测测试币 |
 | IRG / TIRG | 游戏金币；T 前缀为公测测试币 |

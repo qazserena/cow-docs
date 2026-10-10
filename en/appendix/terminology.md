@@ -2,7 +2,7 @@
 
 | Term | Meaning |
 |---|---|
-| Legend Ranch | This game |
+| Interstellar Rangeland | This game (Chinese: 传奇牧场); the first game of CowGalaxy (牛宇宙) |
 | CowGalaxy | The game universe; brand of the portal and forum |
 | IRT / TIRT | Main token; T prefix = beta test token |
 | IRG / TIRG | Game gold; T prefix = beta test token |

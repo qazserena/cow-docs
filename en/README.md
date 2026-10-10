@@ -1,6 +1,6 @@
-# Legend Ranch · Player Handbook
+# Interstellar Rangeland · Player Handbook
 
-Welcome to **Legend Ranch**!
+Welcome to **Interstellar Rangeland**!
 
 This is the player-facing manual: how to start, how to earn, how to fight guild battles — it is all here.  
 Numbers come from the current on-chain contracts and game-server config; anything marked "adjustable" follows the live in-game display.
@@ -36,7 +36,7 @@ Numbers come from the current on-chain contracts and game-server config; anythin
 
 ## The game in one breath
 
-Legend Ranch is a blockchain game built around **cattle NFTs**:
+Interstellar Rangeland is a blockchain game built around **cattle NFTs**:
 
 1. Log in with a wallet and join a planet guild  
 2. Get cattle by opening boxes or buying on the marketplace (during beta: claim the starter pack)  

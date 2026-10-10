@@ -14,7 +14,7 @@ No wallet yet? Install MetaMask → create a wallet → **back up the seed phras
 
 ### 1. Open the game and connect a wallet
 
-1. Open the Legend Ranch game page  
+1. Open the Interstellar Rangeland game page  
 2. Click Connect Wallet  
 3. Confirm the connection and the sign-in signature in your wallet  
 
