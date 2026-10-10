@@ -28,7 +28,7 @@ View, use, and craft here. Using EXP cards / batteries / HP potions also adds fa
 | Pass Card | PVE win +1 | 2 |
 | Score Protection | Keep rating when the next Ladders match would drop it | 1 |
 | PVE Power Card | ATK / DEF / STA +10% in PVE (no stacking) | 2 |
-| Shuffle Card | Redraw hand in battle (**not yet enabled** — skip it for now) | — |
+| Shuffle Card | Using it in the backpack banks 1 shuffle; in battle, during your pick phase and before placing a card, tap "Shuffle ×N" to replace your whole hand (once per pick phase) | 5 activations |
 | Power Potion | 24 h: all fielded cattle ATK +4000 / DEF +3000 / STA +5000 (guild battle) | stacks to extend |
 | Guardian Armor | Leader only; guardian defense +20% this guild battle | 1 per period |
 

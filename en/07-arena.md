@@ -113,6 +113,8 @@ Teams: the captain creates the team, picks cattle, invites via friends or guild 
 
 Illegal plays are rejected: cost above current Spirit; more than 2 cards; two of the same type; a sealed type. Bots play 0 – 2 random cards after 2.5 – 7 s.
 
+**Redraw your hand (Shuffle Card)**: if your hand is bad, tap "Shuffle ×N" at the bottom right during your own pick phase, before placing any card. Your whole hand is replaced by the same number of new cards (old cards go back into the deck, deck size unchanged); Spirit and the timer are untouched. Once per pick phase, 1 shuffle per use. N is how many shuffles you have banked — "use" Shuffle Cards in the backpack first (up to 5 activations per day); with none banked the button tells you to go to the backpack.
+
 ### 4. Damage
 
 Basic attack (rounded down):
@@ -175,6 +177,7 @@ After **10 Match wins** today you can submit a battle report in the Arena (walle
 | Pass Card | 2 | PVE win +1 |
 | PVE Power Card | 2 | +10% to all three stats in PVE (no stacking) |
 | Score Protection | 1 | Keep rating when the next Ladders match would drop it |
+| Shuffle Card | 5 activations | Each banks 1 in-battle shuffle: replace your whole hand in a pick phase (once per phase) |
 
 At the limit the game says "max N per day" and the card is not consumed. Buy them in the **guild shop** (200 IRT each).
 

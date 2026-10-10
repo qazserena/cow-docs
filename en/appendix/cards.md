@@ -1,6 +1,6 @@
 # Appendix · Card Compendium
 
-The Arena and guild battle share one deck of **21 cards** in three types: Combat / Defense / Magic. At most 2 cards per turn, never two of the same type, cost ≤ current Spirit (rules in [07](../07-arena.md)). Start with 3 cards, hand cap 6, the deck reshuffles when empty.
+The Arena and guild battle share one deck of **21 cards** in three types: Combat / Defense / Magic. At most 2 cards per turn, never two of the same type, cost ≤ current Spirit; a Shuffle Card replaces your whole hand during a pick phase (rules in [07](../07-arena.md)). Start with 3 cards, hand cap 6, the deck reshuffles when empty.
 
 Effects are current config; the in-game Card Compendium is the reference. "Lasts 1 turn" means until the end of the next own / enemy turn.
 

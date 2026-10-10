@@ -29,7 +29,7 @@ HP potions: max +10 days per cattle; EXP cards: calves only.
 |---|---|---|---|
 | Pass Card (16) | PVE win +1 | 2 | 200 IRT, guild shop |
 | Score Protection (17) | Keep rating on a losing Ladders match | 1 | 200 IRT, guild shop |
-| Shuffle Card (18) | Redraw hand in battle (**not yet enabled**) | — | 200 IRT, guild shop |
+| Shuffle Card (18) | Backpack use banks 1 shuffle; replace your whole hand during a pick phase (once per phase) | 5 activations | 200 IRT, guild shop |
 | PVE Power Card (19) | ATK / DEF / STA +10% in PVE, no stacking | 2 | 200 IRT, guild shop |
 | Battle Scene (20) | Change battle background | — | Shop |
 | Guardian Armor (20005) | Guild battle guardian defense +20%, leader only | 1 per period | 500 IRT, guild shop limited |
