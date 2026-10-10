@@ -138,7 +138,7 @@ Not approved, Normal adult, calf USDT price below 150, cattle still in the shed 
 ## Beta
 
 **Can't claim the starter pack?**  
-Once per address; "enter the game first / finish a quest" are daily-supply conditions; "out of stock" waits for ops restock. See [17](./17-beta.md).
+Each group is once per address. The pack comes in three groups / three transactions; if your wallet shows "transaction failed" on one of them, the delivered groups are never re-sent — refresh and hit "Claim this group" on the missing one. "Enter the game first / finish a quest" are daily-supply conditions; "out of stock" waits for ops restock. See [17](./17-beta.md).
 
 **Bound an invite code but no points?**  
 Filtered invites (same network as the inviter, or more than 3 from one network in 30 days) earn nothing for either side; the inviter gets +50 / +100 only when the friend actually enters the game and finishes a quest.

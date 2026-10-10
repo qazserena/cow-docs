@@ -40,7 +40,7 @@ You can also found your own: an address holding a Home / Frontier planet card ca
 
 | Method | Notes |
 |---|---|
-| **Beta starter pack** (recommended now) | Portal "Beta → Claim Beta Assets", one click: Home planet, Genesis cattle, adult bull, adult cow, calf, box, a full item set, 2000 TIRT, 20000 TIRG — see [17](./17-beta.md) |
+| **Beta starter pack** (recommended now) | Portal "Beta → Claim Beta Assets", one click (delivered in three transactions): Home planet, Genesis cattle, adult bull, adult cow, calf, box, a full item set, 2000 TIRT, 20000 TIRG — see [17](./17-beta.md) |
 | Open a box | Open cattle boxes at the Breeding Institute, or portal IGO / CattleMart boxes (odds in [16](./16-blind-box.md)) |
 | NFT marketplace | Buy **calves / Genesis cattle** (normal adults cannot be listed, see [13](./13-market.md)) |
 | Referral reward | Every 5 breedings by your referee earns the referrer 1 embryo box + 1 breed card |

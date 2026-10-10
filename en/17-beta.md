@@ -8,9 +8,11 @@ The point of beta is finding problems: every session and every report is recorde
 
 ## 1. Claim beta assets (portal `/betaAssets`)
 
-Connect and sign in, then two tiers are available. Claims are authorised by an official voucher (valid 10 minutes) and land on-chain in a single transaction.
+Connect and sign in, then two tiers are available. Claims are authorised by an official voucher (valid 10 minutes) and then sent on-chain.
 
 ### Starter pack (once per wallet)
+
+The pack is delivered in **three groups, three transactions** (① Home planet + TIRT/TIRG, ② cattle + mystery box, ③ game items), so "Claim All" will ask your wallet for 3 confirmations. It is split to keep each transaction's gas low — the old single transaction occasionally failed. If one group fails, nothing is lost: groups already delivered are never re-sent, the page marks the missing group, and "Claim this group" fetches just that one.
 
 Opens every door of the game:
 
